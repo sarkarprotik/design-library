@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta name="title" content="{{title}}">
+    <meta name="description" content="{{metaDescription}}">
+    <meta name="keywords" content="{{metaKeywords}}">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {{> partials/web-clips/sas-web-clips}}
+    <link rel="preload" href="{{assetsDirectory}}/fonts/ScandinavianNew-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="{{assetsDirectory}}/fonts/ScandinavianNew-Black.woff2" as="font" crossorigin>
+    <link rel="preload" href="{{assetsDirectory}}/fonts/ScandinavianNew-Bold.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="{{assetsDirectory}}/css/vendor.css">
+    <link rel="stylesheet" href="{{assetsDirectory}}/css/tool-ui/tool.css">
+    <!--[if IE]>
+      <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CArray.prototype.forEach%2CNodeList.prototype.forEach%2Ces6"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="tool-header">
+      {{> tool-ui/header}}
+    </header>
+    <main class="tool-main">
+      <nav class="tool-nav">
+        {{> tool-ui/navigation}}
+      </nav>
+      <section class="tool-section">
+        {{{body}}}
+      </section>
+    </main>
+
+    <script>
+    document.querySelectorAll("code").forEach(function(elem) {
+      if (elem.getAttribute("encoded") === "true") {
+        return;
+      }
+
+      elem.innerText = elem.innerHTML;
+      elem.innerHTML = elem.innerHTML
+        .replace(/<br>/gi, "\n")
+        .replace(/xscript/gi, "script");
+    });
+    </script>
+    <script src="{{assetsDirectory}}/js/tool-ui/tool.js" async></script>
+    <script src="{{assetsDirectory}}/js/vendor.js" async></script>
+    <script src="{{assetsDirectory}}/js/build.js" async></script>
+    <script>
+      var iconConfig = {
+        default: true,
+        extra: true,
+        other: true,
+        flags: true
+      };
+    </script>
+    <script src="{{assetsDirectory}}/js/partials/icons/build.js" async></script>
+    <script>
+      (function(d, src) {
+        if (!document.getElementById("search-input")) {
+          return;
+        }
+
+        var s = d.createElement("script");
+        s.async = true;
+        s.src = src;
+        d.head.appendChild(s);
+      })(document, "https://test.sas.se/v2/de-content-search-widget/assets/js/content-search/build.min.js");
+    </script>
+
+  </body>
+</html>

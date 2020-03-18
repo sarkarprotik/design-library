@@ -1,0 +1,12 @@
+<div class="sas-image{{#if imageClass}} {{imageClass}}{{/if}}">
+  <img 
+    {{#unless notLazy}}data-sizes="auto"{{/unless}}
+    {{#unless notLazy}}data-{{/unless}}src="{{imageSource}}"{{#if altText}} alt="{{altText}}"{{else}} role="presentation"{{/if}}
+    {{#unless notResponsive}}
+    {{#unless notLazy}}data-{{/unless}}srcset="{{imageSource}}.transform/small/img.jpg 500w,
+    {{imageSource}}.transform/medium/img.jpg 768w,
+    {{imageSource}}.transform/large/img.jpg 900w"
+    {{/unless}}
+    {{#unless notLazy}}class="lazyload"{{/unless}}
+  >
+</div>

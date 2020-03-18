@@ -1,0 +1,58 @@
+{
+  "license": "MIT",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.4.2",
+    "dotenv": "^8.1.0",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-svgmin": "^2.2.0",
+    "handlebars-helpers": "^0.10.0",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-hbs": "^1.0.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lazysizes": "^5.2.0",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "sharp": "^0.23.0",
+    "stylelint-declaration-strict-value": "^1.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-file-include": "^2.1.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-remote-src": "^0.4.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^10.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "jsdom": "^15.1.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "through2": "^3.0.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "scripts": {
+    "remote": "gulp remote",
+    "start": "gulp start"
+  }
+}

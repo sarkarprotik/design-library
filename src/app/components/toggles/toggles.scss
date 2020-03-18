@@ -1,0 +1,22 @@
+.toggles {
+  @include font-size(14);
+  display: flex;
+  margin-bottom: 16px;
+
+  .toggle-btns {
+    display: flex;
+    background: $b3-color;
+    border: 3px solid $b3-color;
+    border-radius: $border-radius-normal;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: $b3-color;
+    margin: 0;
+
+    &[aria-pressed='true'] {
+      background-color: $b2-color;
+    }
+  }
+}

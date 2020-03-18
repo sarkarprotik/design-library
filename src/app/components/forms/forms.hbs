@@ -1,0 +1,195 @@
+<h2 class="color-b3">Forms</h2>
+
+<h3 class="color-b3">Default SAS inputs</h3>
+<form>
+  <div class="sas-input">
+    <div id="finder-combobox" class="form-field form-combobox" role="combobox" aria-expanded="false" aria-owns="finder-listbox" aria-haspopup="listbox">
+      <label id="finder-label" for="finder-input" class="label">Where</label>
+      <input id="finder-input" type="text" aria-autocomplete="list" aria-controls="finder-listbox" aria-activedescendant>
+      <div class="input-listbox-container">
+        <ul aria-labelledby="finder-label" role="listbox" id="finder-listbox" class="input-listbox" data-items-source="cities" data-preselect="florens"></ul>
+      </div>
+    </div>
+    <span class="message">Invalid city</span>
+  </div>
+  {{> components/forms/textinput label="Text" dataValidation="" errorMessage="" type="email"}}
+  {{> components/forms/textinput label="Email" dataValidation="[^@]+@[^\.]+\..+" errorMessage="Email!" type="email"}}
+  {{> components/forms/textinput label="Password" type="password"}}
+  {{> components/forms/textinput label="Number" dataValidation="" errorMessage="" type="number"}}
+  {{> components/forms/textinput label="Search" dataValidation="" errorMessage="" type="search"}}
+  {{> components/forms/textinput label="Tel" dataValidation="" errorMessage="" type="tel"}}
+
+  <div class="sas-input">
+    <label class="form-field">
+      <span class="label">Select</span>
+      <select>
+        <option value=""></option>
+        <option value="0">Option</option>
+        <option value="1">Option</option>
+      </select>
+    </label>
+    <span class="message">Cannot be left blank</span>
+  </div>
+  <div class="sas-input">
+    <label class="form-field">
+      <span class="label">Text area</span>
+      <textarea></textarea>
+    </label>
+    <span class="message">Cannot be left blank</span>
+  </div>
+      <fieldset>
+        <legend>Checkbox group</legend>
+        {{> components/forms/checkradio name="question1" label="One" id="q1" value="ja"}}
+        {{> components/forms/checkradio name="question2" label="Two" value="nej"}}
+        {{> components/forms/checkradio name="question3" label="Three" value="vet ej"}}
+     </fieldset>
+      <fieldset>
+        <legend>Radio group</legend>
+        {{> components/forms/checkradio type="radio" name="question11" value="ja" label="Ja"}}
+        {{> components/forms/checkradio type="radio" name="question11" value="nej" label="Nej"}}
+        {{> components/forms/checkradio type="radio" name="question11" value="vet ej" label="Vet ej"}}
+      </fieldset>
+</form>
+<h3 class="color-b3">Example : address</h3>
+<section>
+  <div class="sas-container">
+    <form class="sas-form-grid">
+      {{> components/forms/textinput label="First name" name="firstname" dataValidation="^[\D]+$" mandatory="true" errorMessage="Please enter your first name"}}
+      {{> components/forms/textinput label="Surname" name="surname" dataValidation="^[\D]+$" errorMessage="Please enter your surname"}}
+      {{> components/forms/textinput class="full" label="Street Address" name="street" dataValidation="^[\D]+$" errorMessage="Please enter your address"}}
+      {{> components/forms/textinput label="Email" name="mail" dataValidation="[^@]+@[^\.]+\..+" errorMessage="Please enter valid e-mail" type="email"}}
+      {{> components/forms/textinput class="short first" label="Zip code" name="zip" dataValidation="^[\D]+$" errorMessage="Boo hoo" type="number"}}
+      {{> components/forms/textinput class="long" label="City" name="city" dataValidation="^[\D]+$" errorMessage="Please enter correct thing"}}
+      {{> components/forms/textinput label="Phone" name="tel" dataValidation="^[\D]+$" errorMessage="Please enter correct thing" type="tel"}}
+
+    </form>
+  </div>
+</section>
+<h3 class="color-b3">Example : Payment</h3>
+
+<section>
+  <div class="sas-container">
+    <form class="sas-form-grid">
+      {{> components/forms/textinput class="first" label="Credit card number" name="ccn" dataValidation="^[\D]+$" errorMessage="Please enter correct thing" type="number"}}
+      {{> components/forms/textinput label="Name on Card" name="name" dataValidation="^[\D]+$" errorMessage="Please enter correct thing"}}
+      {{> components/forms/textinput class="cvd" label="Expiration date" name="cvd" dataValidation="^[\D]+$" errorMessage="Please enter correct thing"}}
+      {{> components/forms/textinput class="cvc" label="Cvc" name="cvc" dataValidation="^[\D]+$" errorMessage="Please enter correct thing" type="number"}}
+    </form>
+  </div>
+</section>
+
+<h3 class="color-b3">Default form tag styling</h3>
+<p>Used as default when there is forms and inputs that don't follow the SAS standard</p>
+<form>
+  <p>
+    <label>Fil <input type="file"></label>
+  </p>
+  <p>
+    <label for="inputtext">Textinput</label><input type="text" id="inputtext">
+  </p>
+  <p>
+    <label for="select">Select</label>
+    <select id="select">
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+  </p>
+  <p class="check-radio"><label><input type="checkbox"> Checkbox</label></p>
+  <p class="check-radio"><label><input type="radio"> Radio</label></p>
+  <label>Text area <textarea></textarea></label>
+</form>
+
+
+<pre>
+  <code class="language-html">
+    <form class="flysas-form">
+      <div class="col-form-field">
+        <label class="form-field">
+          <span class="label">Firstname</span>
+          <input type="text" data-validation="^[\D]+$">
+        </label>
+        <span class="message">Invalid firstname</span>
+      </div>
+      <div class="col-form-field">
+        <label class="form-field">
+          <span class="label">Lastname</span>
+          <input type="text">
+        </label>
+        <span class="message"></span>
+      </div>
+      <div class="col-form-field">
+        <div id="city-combobox" class="form-field form-combobox" role="combobox" aria-expanded="false" aria-owns="city-listbox" aria-haspopup="listbox">
+          <label id="city-label" for="city-input" class="label">City</label>
+          <input id="city-input" type="text" aria-autocomplete="list" aria-controls="city-listbox" aria-activedescendant>
+          <div class="input-listbox-container">
+            <ul aria-labelledby="city-label" role="listbox" id="city-listbox" class="input-listbox" data-items-source="cities"></ul>
+          </div>
+        </div>
+        <span class="message">Invalid city</span>
+      </div>
+      <div class="col-form-field">
+        <label class="form-field">
+          <span class="label">E-mail</span>
+          <input type="email" data-validation="[^@]+@[^\.]+\..+">
+        </label>
+        <span class="message">Please enter valid e-mail</span>
+      </div>
+      <div class="col-form-field">
+        <label class="form-field">
+          <span class="label">Password</span>
+          <input type="password" data-validation="^[^\s]{6,}$">
+        </label>
+        <span class="message">Please choose a valid password</span>
+      </div>
+      <div class="col-form-field">
+        <label class="form-field">
+          <span class="label">Sex</span>
+          <select>
+            <option value=""></option>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+          </select>
+        </label>
+        <span class="message">Cannot be left blank</span>
+      </div>
+
+      <fieldset>
+        <legend>Checkboxgrupp</legend>
+        <input type="checkbox"> Ja</p>
+        <input type="checkbox"> Nej</p>
+        <input type="checkbox"> Vet ej</p>
+      </fieldset>
+    </form>
+  </code>
+</pre>
+
+<script>
+  window.flysasLibrary = window.flysasLibrary || {};
+  flysasLibrary.pageData = {
+    cities: [{
+      value1: "Sverige",
+      value2: "Stockholm"
+    }, {
+      value1: "Sverige",
+      value2: "Göteborg"
+    }, {
+      value1: "Norge",
+      value2: "Oslo"
+    }, {
+      value1: "Norge",
+      value2: "Bergen"
+    }, {
+      value1: "Italien",
+      value2: "Florens"
+    }, {
+      value1: "Italien",
+      value2: "Catania"
+    }, {
+      value1: "Spanien",
+      value2: "Palma de Mallorca"
+    }, {
+      value1: "Spanien",
+      value2: "Malaga"
+    }]
+  };
+</script>

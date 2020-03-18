@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>plane-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,10.2941375 L1.86584575,11.9 L8.71950775,11.9 L7.57723075,17 L8.71950775,17 L12.146338,11.9 L16.715446,11.9 C19,11.9 19,10.625 19,10.625 C19,9.35 16.715446,9.35 16.715446,9.35 L12.146338,9.35 L8.71950775,4.25 L7.57723075,4.25 L8.71950775,9.35 L3.00812275,9.35 L1.86584575,6.8 L1,6.8 L1,10.2941375 Z" id="path-1"></path>
+    </defs>
+    <g id="plane-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="path" fill="#000099" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+!function(e,t,s){class c extends S4SBase{constructor(){super()}connectedCallback(){this.init(s.templates.card),this.subscribe("corporateMode",e=>{console.log("Got event. Modifying image src",e.detail),this.elements.image.src=e.detail})}get src(){return this.getAttribute("src")}}e.customElements.define("s4s-card",c)}(window,document,window.s4s);

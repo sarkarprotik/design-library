@@ -1,0 +1,26 @@
+<div class="sas-main-cookiebar">
+  <div class="sas-container">
+    <div>{{{cookie.html}}}</div>
+    <button class="btn btn-md btn-secondary btn-acknowledge">{{i18n @root.market "aem.information.cookie-notification.text"}}</button>
+  </div>
+</div>
+<div class="flysas modal modal-wide modal-cookie" id="cookie-modal" role="dialog" aria-modal="true" aria-label="Cookie policy">
+  <div class="modal-content">
+    <button type="button" class="btn btn-lg btn-close" data-close="true" aria-label="{{i18n @root.market "close"}}">
+      <svg class="sas-icon sas-icon-in--close" role="img">
+        <use xlink:href="#in--close" href="#in--close"></use>
+        <title>{{i18n @root.market "close"}}</title>
+      </svg>
+      <span class="sr-hidden">{{i18n @root.market "close"}}</span>
+    </button>
+    <div class="dynamic-content"></div>
+    <div class="modal-footer">
+      <input type="checkbox" id="cookie-personalization" checked>
+      <div>
+        <h2 class="h3"><label for="cookie-personalization">{{i18n @root.market "cookie.personalization.header"}}</label></h2>
+        <p>{{i18n @root.market "cookie.personalization.text"}}</p>
+      </div>
+    </div>
+    <button class="btn btn-md btn-acknowledge" data-close="true">{{i18n @root.market "aem.information.cookie-notification.text"}}</button>
+  </div>
+</div>

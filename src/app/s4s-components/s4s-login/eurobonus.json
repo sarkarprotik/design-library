@@ -1,0 +1,121 @@
+{
+  "euroBonus": {
+    "euroBonusId": "624012345",
+    "nameOnCard": "Test Testsson",
+    "dateRegistered": "2014-07-01T00:00:00.000Z",
+    "qualifyingPeriodStartDate": "2019-07-01T00:00:00.000Z",
+    "qualifyingPeriodEndDate": "2020-06-30T00:00:00.000Z",
+    "pointsAvailable": "0",
+    "totalPointsForUse": "1349",
+    "eligibleForRedemption": true,
+    "currentTierCode": "G",
+    "currentTierName": "Gold",
+    "awardPointsExpiry": [
+      {
+        "points": "1349",
+        "expiryDate": "2021-03-30T00:00:00.000Z"
+      },
+      {
+        "points": "120",
+        "expiryDate": "2022-06-30T00:00:00.000Z"
+      },
+      {
+        "points": "222120",
+        "expiryDate": "2020-03-30T00:00:00.000Z"
+      },
+      {
+        "points": "25212120",
+        "expiryDate": "2020-06-30T00:00:00.000Z"
+      },
+      {
+        "points": "20",
+        "expiryDate": "2020-08-30T00:00:00.000Z"
+      }
+    ],
+    "transactionHistory": {
+      "totalNumberOfPages": "1",
+      "transaction": [
+        {
+          "id": "EBB624012345",
+          "datePerformed": "2019-06-16T00:00:00.000Z",
+          "description1": "Malmö-Stockholm",
+          "description2": "SK 0126 SAS GO",
+          "availablePointsAfterTransaction": "250",
+          "basicPointsAfterTransaction": "Basic Points",
+          "typeOfTransaction": "Flight Activity",
+          "basicPoints": "250"
+        },
+        {
+          "id": "EBB624012345",
+          "datePerformed": "2018-11-24T00:00:00.000Z",
+          "description1": "Flygbussarna Sverige",
+          "description2": "Points Earned",
+          "availablePointsAfterTransaction": "99",
+          "basicPointsAfterTransaction": "Extra Points",
+          "typeOfTransaction": "Other activity"
+        },
+        {
+          "id": "EBB624012345",
+          "datePerformed": "2018-11-23T00:00:00.000Z",
+          "description1": "London-Stockholm",
+          "description2": "SK 0534 SAS GO",
+          "availablePointsAfterTransaction": "500",
+          "basicPointsAfterTransaction": "Basic Points",
+          "typeOfTransaction": "Flight Activity",
+          "basicPoints": "500"
+        },
+        {
+          "id": "EBB624012345",
+          "datePerformed": "2018-11-19T00:00:00.000Z",
+          "description1": "Stockholm-London",
+          "description2": "SK 0525 SAS GO",
+          "availablePointsAfterTransaction": "500",
+          "basicPointsAfterTransaction": "Basic Points",
+          "typeOfTransaction": "Flight Activity",
+          "basicPoints": "500"
+        }
+      ]
+    },
+    "tierUpgrade": {
+      "pointsRequiredForUpgrade": "20000",
+      "flightsRequiredForUpgrade": "10",
+      "flightsFlownThisYear": "0",
+      "nextTierCode": "SILVER",
+      "pointsEarnedThisYear": "0"
+    },
+    "euroBonusTierDefinitions": [
+      {
+        "code": "B",
+        "name": "Member",
+        "levelSequence": "1"
+      },
+      {
+        "code": "S",
+        "name": "Silver",
+        "levelSequence": "2"
+      },
+      {
+        "code": "G",
+        "name": "Gold",
+        "levelSequence": "3"
+      },
+      {
+        "code": "D",
+        "name": "Diamond",
+        "levelSequence": "4"
+      },
+      {
+        "code": "P",
+        "name": "Pandion",
+        "levelSequence": "5"
+      }
+    ],
+    "lifeTimeGold": true
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "/euroBonus/getAccountInfo?pageNumber=1&customerSessionId=87aa580ed60a42cd883f75b87d855735 "
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "customerSessionId": "a645515a8f9c419e96a173ccfd660dfc",
+  "crmReference": "27554848",
+  "crmReferenceEnc": "Dae9zVUK1pJPONjh3HQO7A==",
+  "sessionId": "27554848,2020-03-06 13:58:26,30,10,mdE8GoNZ4Zi3xCFvwvQS82d9qUbZqVG7Vu5YF1OmBBlbPgstEondkf0I+Tjbj3Z3",
+  "individual": {
+    "firstName": "test",
+    "firstnameEnc": "yEbGOZS1BJVGnROplGlsEGL8Gslavj+e3kK2SwUWVb4=",
+    "lastName": "testsson",
+    "lastNameEnc": "4uYGAbQgQTGHet4nyN6i29NAxGZiK6oblg5EiqhNlTs=",
+    "gender": "Man",
+    "genderCode": "M",
+    "dateOfBirth": "1912-12-16T00:00:00.000Z",
+    "profileLastModified": "2012-07-08T00:26:11.9715837",
+    "preferredLanguage": "en",
+    "title": "Herr"
+  },
+  "address": {
+    "physical": [
+      {
+        "id": "0",
+        "addressLine1": "adasdas 12",
+        "zipCode": "121 18",
+        "category": "Home",
+        "city": {
+          "name": "test"
+        },
+        "countyState": {},
+        "country": {
+          "code": "SE",
+          "name": "Sweden"
+        }
+      }
+    ],
+    "virtual": {
+      "email": [
+        {
+          "id": "0",
+          "category": "Home",
+          "emailAddress": "testsson@gmail.com",
+          "emailAddressEnc": "oWBgSfzdGcmHYHxtrudzCTyOOCfifXDkPlb0zM88Iqs="
+        }
+      ],
+      "mobile": [
+        {
+          "id": "1",
+          "category": "Home",
+          "phoneNumber": "+461234567"
+        }
+      ]
+    }
+  },
+  "engagements": {
+    "travelPass": [
+      {
+        "status": "aktiverad",
+        "id": "083236794",
+        "prefix": "A",
+        "lastModified": "2020-02-28T11:30:32.3867528",
+        "statusCode": "ACTIVE"
+      }
+    ],
+    "euroBonus": {
+      "ebNumber": "613075065",
+      "ebNumberEnc": "w6bGjs+Nc+mcC2ZhmnyliQ==",
+      "dateRegistered": "2014-07-07T00:00:00.000Z",
+      "nameOnCard": "test testsson",
+      "lastModified": "2019-01-04T15:15:23.8405879",
+      "prefix": "EB",
+      "currentTierCode": "B",
+      "ffProviderCode": "SK",
+      "earnEbPoints": true,
+      "links": [
+        {
+          "rel": "EuroBonus AccountInfo",
+          "href": "/euroBonus/getAccountInfo?pageNumber=1&customerSessionId=a645515a8f9c419e96a173ccfd660dfc "
+        }
+      ]
+    }
+  },
+  "corporateMemberEngagement": {
+    "corporateMember": [
+      {
+        "companyName": "Ugges Livs",
+        "cnfCid": "009226",
+        "corporateMemberId": "12303100",
+        "authorityToAccess": "Approved",
+        "isClosed": "false",
+        "workEmail": "forsvar@uggeslivs.se",
+        "workPhone": "47712374072",
+        "isTravelAdmin": true,
+        "id": "wx4ej9ZkE3b6/tkAFvxXNuuuGH/sZcFM00NSiJC3s131dTkzI+LRKBVxd4tOH7HQN/FgFihZEwkXaKhSTUwJwA=="
+      }
+    ]
+  },
+  "preferences": {
+    "services": {
+      "subscriptionInformation": {
+        "subscriptionLastModified": "2019-01-03T10:02:25.0025629",
+        "subscriptionId": "624075065",
+        "subscription": [
+          {
+            "notificationAddress": "+461234567",
+            "typeOfNotification": "SMS",
+            "typeOfSubscription": "FlightInfo",
+            "subscriptionKey": 0,
+            "subscriptionStatus": "false"
+          },
+          {
+            "notificationAddress": "+461234567",
+            "typeOfNotification": "SMS",
+            "typeOfSubscription": "CheckIn",
+            "subscriptionKey": 1,
+            "subscriptionStatus": "false"
+          },
+          {
+            "notificationAddress": "testsson@gmail.com",
+            "typeOfNotification": "EMail",
+            "typeOfSubscription": "CheckIn",
+            "subscriptionKey": 2,
+            "subscriptionStatus": "false"
+          }
+        ]
+      }
+    }
+  },
+  "accountInformation": {
+    "userName": "testsson@gmail.com",
+    "accountlastModified": "2014-07-08T00:26:11.964583",
+    "pwdExpiryDate": "2021-02-11 16:10:07"
+  },
+  "consents": {
+    "id": "27554228",
+    "lastModified": "2020-02-12T16:14:34.0764246",
+    "tocConsentRequired": false,
+    "consentItems": [
+      {
+        "key": 1,
+        "category": "DirectMarketing",
+        "type": "EMail",
+        "isActive": false
+      },
+      {
+        "key": 2,
+        "category": "DirectMarketing",
+        "type": "SMS",
+        "isActive": false
+      },
+      {
+        "key": 3,
+        "category": "DirectMarketing",
+        "type": "Telemarketing",
+        "isActive": true
+      },
+      {
+        "key": 5,
+        "category": "TOC",
+        "type": "EB",
+        "version": 3,
+        "isActive": true,
+        "activationDate": "2020-02-12T15:14:34.0705605",
+        "links": [
+          {
+            "rel": "T&C",
+            "href": "https://api.flysas.com/customer/agreement?profileType=EB&version=3"
+          }
+        ]
+      }
+    ]
+  },
+  "links": [
+    {
+      "rel": "SignOut",
+      "href": "/signout"
+    },
+    {
+      "rel": "Profile Update",
+      "href": "/a645515a8f9c419e96a113ccfd660dfc/profile  "
+    },
+    {
+      "rel": "Update Password",
+      "href": "/a645515a8f9c419e96a113ccfd660dfc/changePassword "
+    },
+    {
+      "rel": "Delete Profile",
+      "href": "/deleteProfile"
+    }
+  ]
+}

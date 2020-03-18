@@ -1,0 +1,183 @@
+s4s-login {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: 3;
+
+  &[hidden] {
+    display: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $modal-background;
+    z-index: -1;
+  }
+}
+
+hr {
+  margin: 16px -16px;
+  color: $g1-color;
+}
+
+.s4s-login {
+  appearance: none;
+  top: $mainnav-height-mobile;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $white-color;
+  border-radius: 0 0 $border-radius-normal $border-radius-normal;
+  padding: $margin-normal * 2;
+
+  &.logged-in  {
+    transform: rotateX('180deg');
+  }
+
+  @include desktop {
+    position: absolute;
+    top: $mainnav-height-desktop;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: 336px;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: $margin-normal / 2 $margin-normal * 2;
+    border-radius: $border-radius-normal;
+
+    &:not(:last-child) {
+      margin-right: $margin-normal;
+    }
+
+    &-s {
+      background: $g1-color;
+      color: $g5-color;
+    }
+
+    &-b {
+      background: $b0-color;
+      color: $white-color;
+    }
+
+    &-g {
+      background: $s1-color;
+      color: $black-color;
+    }
+
+    &-d {
+      background: $g0-dark-color;
+      color: $black-color;
+    }
+
+    &-p {
+      background: $g5-color;
+      color: $white-color;
+    }
+
+    &-admin {
+      background: $b3-color;
+      color: $white-color;
+    }
+  }
+
+  .greeting {
+    color: $g3-dark-color;
+
+    &-b {
+      color: $b0-color;
+    }
+
+    &-g {
+      color: $s1-dark-color;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin-bottom: $margin-normal * 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .flysas-accordion {
+    text-align: center;
+    margin: -#{$margin-normal * 2} -#{$margin-normal * 2} 0;
+    border-bottom: 1px solid $g4-dark-color;
+
+    .accordion-btn {
+      border: 0;
+    }
+
+    .btn-toggle {
+      @extend .h4;
+      color: $b3-color;
+      text-align: center;
+
+      s4s-icon {
+        display: block;
+        margin: 0 0 0 -20px;
+      }
+
+      .sas-icon-cl--arrow-up {
+        margin: 0;
+      }
+    }
+
+    .accordion-content {
+      padding: 0;
+
+      a {
+        text-transform: capitalize;
+        padding: 16px;
+        display: block;
+        border: 0;
+        /* stylelint-disable max-nesting-depth */
+        &:hover,
+        &:focus {
+          background: $g0-color;
+          text-decoration: none;
+        }
+        /* stylelint-enable max-nesting-depth */
+      }
+
+      svg {
+        margin: 0;
+      }
+    }
+
+    span {
+      flex-grow: 1;
+    }
+
+    .accordion-arrow {
+      margin: 0 0 0 -#{$margin-normal * 3};
+    }
+  }
+
+  s4s-accordion {
+    + div {
+      margin-top: $margin-normal * 2;
+    }
+  }
+}

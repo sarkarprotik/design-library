@@ -1,0 +1,30 @@
+.form-loader {
+  display: none;
+}
+
+.success,
+.failure {
+  border-radius: $border-radius-normal;
+  padding: $margin-normal * 2;
+}
+
+.success {
+  background: $g0-color;
+  border: 1px solid $g0-dark-color;
+}
+
+.failure {
+  background: $r-color;
+  border: 1px solid $r-dark-color;
+  color: $white-color;
+}
+
+&.posting {
+  .form-loader {
+    display: block;
+  }
+
+  .form-data {
+    display: none;
+  }
+}

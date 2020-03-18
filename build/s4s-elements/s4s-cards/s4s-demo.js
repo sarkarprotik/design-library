@@ -1,0 +1,1 @@
+!function(e,t,s){class n extends S4SBase{constructor(){super()}connectedCallback(){this.init(s.templates.demo),this.elements.button.addEventListener("click",e=>{e.preventDefault(),this.publish("corporateMode",this.elements.imgInput.value)})}}e.customElements.define("s4s-demo",n)}(window,document,window.s4s);

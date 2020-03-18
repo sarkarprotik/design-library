@@ -1,0 +1,205 @@
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg {
+  &.sas-icon {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  use {
+    fill: currentColor;
+  }
+
+  // hotfixing light cep
+  &.sas-book-icon {
+    width: 20px;
+    height: 20px;
+
+    &.i-cb-checked,
+    &.i-cb-empty,
+    &.i-close,
+    &.i-arrow-down,
+    &.i-arrow-up,
+    &.i-decrease,
+    &.i-increase {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.sas-book-icon-16 {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.cep-preference {
+  .pay-radio-group {
+    input[type='radio'] {
+      opacity: 1;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .radio-wrap {
+      svg.sas-book-icon {
+        display: none;
+      }
+    }
+  }
+  // end hotfix
+}
+
+.sas-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: -.13em;
+  text-align: center;
+  transition: color .5s, transform .5s;
+
+  use {
+    transform-origin: center;
+  }
+
+  &.circled {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: $brand-color;
+    color: $white-color;
+    padding: 1%;
+    margin: -3px -1px;
+  }
+
+  &.boxed {
+    width: 24px;
+    height: 24px;
+    border-radius: $border-radius-normal;
+    background-color: $brand-color;
+    color: $white-color;
+    padding: 1%;
+    margin: -2px 0;
+  }
+
+  &.up {
+    use {
+      transform: rotate(0);
+    }
+
+    &.right {
+      use {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.left {
+      use {
+        transform: rotate(315deg);
+      }
+    }
+  }
+
+  &.down {
+    &.right {
+      use {
+        transform: rotate(135deg);
+      }
+    }
+
+    &.left {
+      use {
+        transform: rotate(225deg);
+      }
+    }
+  }
+
+  &.rotate-90,
+  &.right {
+    use {
+      transform: rotate(90deg);
+    }
+  }
+
+  &.rotate-180,
+  &.down {
+    use {
+      transform: rotate(180deg);
+    }
+  }
+
+  &.rotate-270,
+  &.left {
+    use {
+      transform: rotate(270deg);
+    }
+  }
+
+  &.rotate-360 {
+    use {
+      transform: rotate(360deg);
+    }
+  }
+
+  &.scale--1 {
+    transform: scale(.5);
+  }
+
+  &.scale-2 {
+    transform: scale(2);
+  }
+
+  &.scale-3 {
+    transform: scale(3);
+  }
+
+  &.scale-4 {
+    transform: scale(4);
+  }
+
+  &[class*='sas-icon-in--'] {
+    width: 24px;
+    height: 24px;
+  }
+
+  &[class*='sas-icon-p--'] {
+    width: 42px;
+    height: 30px;
+  }
+
+  &[class*='sas-icon-flag--'] {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.sas-icon-b--star-alliance-dark,
+.sas-icon-b--star-alliance-light {
+  width: 245px;
+  height: 24px;
+}
+
+.sas-icon-cl--logo {
+  color: $brand-color;
+  font-size: 72px;
+}
+
+.sas-icon-cl--alert-circle {
+  color: $r-color;
+}
+
+.sas-icon-cl--check-circle {
+  color: $g-color;
+}
+
+.sas-icon-cl--eb-coin-circle {
+  color: $s2-color;
+}
+
+p s4s-icon {
+  vertical-align: -.2em;
+}

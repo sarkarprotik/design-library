@@ -1,0 +1,105 @@
+{
+  "login": {
+    "heading": "Login",
+    "requiredText": "* required field",
+    "inputFields": [
+      {
+        "mandatory": true,
+        "label": "Email or username",
+        "name": "email",
+        "type": "text",
+        "message": "Invalid login",
+        "validation": "",
+        "infoText": "You can also log in using your username, your EuroBonus or Travel Pass number"
+      },
+      {
+        "mandatory": true,
+        "label": "Password",
+        "name": "password",
+        "type": "password",
+        "message": "Invalid login",
+        "validation": ""
+      }
+    ],
+    "submitLabel": "Login",
+    "passwordReset": {
+      "text": "forgot your password",
+      "href": "link to passwordreset"
+    },
+    "subHeading": "New account",
+    "buttonLabel": "Register",
+    "modals": {
+      "forgotPassword": {
+        "heading": { "text": "Forgot password", "class": "h2" },
+        "subheading": {
+          "text": "Please enter the email address, EuroBonus or Travel Pass number connected with your account.",
+          "class": "h4"
+        },
+        "form": {
+          "class": "flysas-form",
+          "input": {
+            "label": "Email/Eurobonus number",
+            "name": "Email",
+            "type": "text",
+            "validation": "^[^0-9]+$",
+            "message": "Invalid login",
+            "class": "block-element"
+          },
+          "submit": {
+            "text": "Reset password",
+            "type": "submit",
+            "class": "block-element"
+          }
+        },
+        "id": "12345"
+      },
+      "register": {
+        "heading": { "text": "Welcome to our flight club!", "class": "h2" },
+        "form": {
+          "class": "flysas-form",
+          "input": {
+            "label": "Email address",
+            "name": "Email",
+            "type": "text",
+            "validation": "^[^0-9]+$",
+            "message": "Invalid email",
+            "class": "block-element"
+          },
+          "submit": {
+            "text": "Join",
+            "type": "submit",
+            "class": "block-element"
+          }
+        },
+        "id": "6789"
+      }
+    }
+  },
+  "loggedIn": {
+    "states": {
+      "private": {
+        "label": "Private"
+      },
+      "business": {
+        "label": "SAS For Business"
+      }
+    },
+    "greeting": ["Hej", "Hello", "Namaste", "Bonjour", "Hola", "Salam", "Grüezi"],
+    "eurobonusPoints": "EuroBonus points",
+    "expiringPoints": "Expiring points",
+    "eurobonus": {
+      "text": "My EuroBonus",
+      "href": "linkToEB",
+      "className": "color-g5"
+    },
+    "settings": {
+      "text": "Settings",
+      "href": "linkToSettings",
+      "className": "color-g5"
+    },
+    "companyDetails": { "text": "Company details", "className": "color-g5" },
+    "travelers": { "text": "Travelers", "className": "color-g5" },
+    "travelPass": { "text": "My travel pass", "href": "linkToTravelPass", "className": "color-g5" },
+    "logOut": { "text": "Log out" }
+  }
+}

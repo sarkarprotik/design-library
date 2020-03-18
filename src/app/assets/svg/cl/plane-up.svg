@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>plane-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.5,12.3758472 L11.1666667,10.8493228 L11.1666667,14.2138453 L13.3333333,15.9905326 L13.3333333,17.75 L9.92433333,16.4655018 L6.5,17.75 L6.5,15.9905326 L8.83333333,14.239013 L8.83333333,10.8493228 L2.5,12.3758472 L2.5,10.3942229 L8.83333333,6.8493636 L8.83333333,2.84694436 C8.83333333,2.10326758 9.345,1.5 10,1.5 C10.655,1.5 11.1666667,2.10326758 11.1666667,2.84694436 L11.1666667,6.8493636 L17.5,10.3942229 L17.5,12.3758472 Z" id="path-1"></path>
+    </defs>
+    <g id="plane-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="path" fill="#000099" transform="translate(10.000000, 9.625000) scale(-1, 1) translate(-10.000000, -9.625000) " xlink:href="#path-1"></use>
+    </g>
+</svg>

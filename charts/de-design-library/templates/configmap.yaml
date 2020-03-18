@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "de-design-library.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "de-design-library.name" . }}
+    helm.sh/chart: {{ include "de-design-library.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
+  SCOPE: {{ .Values.scope | default "set_this_in_pipeline" | lower | quote }}
+  SERVICE_PORT: {{ .Values.service.port | quote }}
+  {{- range $k, $v := .Values.env }}
+  {{ $k }}: {{ $v | quote }}
+  {{- end }}

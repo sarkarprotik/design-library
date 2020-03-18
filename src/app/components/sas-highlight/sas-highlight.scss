@@ -1,0 +1,20 @@
+.sas-highlight {
+  background-color: $b0-light-color;
+  padding: $margin-normal * 2;
+  margin-bottom: $margin-normal * 2;
+
+  h3 {
+    margin-top: 2px;
+  }
+
+  .sas-icon {
+    float: left;
+    margin-right: $margin-normal;
+    height: 20px;
+    width: 20px;
+  }
+
+  .rich-text {
+    overflow: hidden;
+  }
+}

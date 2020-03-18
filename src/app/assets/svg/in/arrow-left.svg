@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>arrow-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="13.6487214 14.5313136 11.5234958 16.6487214 4.4686864 9.56786463 11.479353 2.5313136 13.6045787 4.64872145 8.70353086 9.56786463"></polygon>
+    </defs>
+    <g id="arrow-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Components/Icons/Ui/UpArrow/Blue-M" fill="#000099" xlink:href="#path-1"></use>
+    </g>
+</svg>

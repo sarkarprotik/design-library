@@ -1,0 +1,28 @@
+:root {
+  --sas-margin-normal: $margin-normal;
+  --sas-margin-double: $margin-normal * 2;
+  --sas-margin-quadruple: $margin-normal * 4;
+  --sas-font-family: $font-family-scandinavian; }
+
+.spinning-numbers {
+  font-size: 2rem;
+  display: flex; }
+  .spinning-numbers .number-plate {
+    padding: 8px 4px;
+    margin: 0 8px 0 0;
+    background: #009;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    text-align: center; }
+  .spinning-numbers .number-box {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    line-height: 1em;
+    display: inline-block; }
+    .spinning-numbers .number-box > * {
+      position: relative; }
+  .spinning-numbers .numbers {
+    top: 0;
+    transition: top .5s; }

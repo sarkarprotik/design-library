@@ -1,0 +1,74 @@
+<{{#if bannerLink}}a href="{{bannerLink}}"{{else}}div{{/if}} class="card banner{{#if bannerType}} {{bannerType}}{{/if}}{{#if bannerColor}} {{bannerColor}}{{/if}}">
+  {{#if videoSource}}
+    {{>partials/video/video}}
+  {{/if}}
+  {{#if imageSource}}
+    {{>partials/images/image notLazy=true}}
+  {{/if}}
+  {{#if icons}}
+    <div class="icons">
+      {{#each icons}}
+        {{>partials/icons/svgInternal}}
+      {{/each}}
+    </div>
+  {{/if}}
+    <div class="content">
+    {{#eq bannerType 'teaser-card'}}
+      <h2>{{heading}}</h2>
+      {{#if subHeading}}
+        <h3>{{subHeading}}</h3>
+      {{/if}}
+      <div class="rich-text">{{{text}}}</div>
+    {{/eq}}
+    {{#eq bannerType 'image-card'}}
+      <h2>{{heading}}</h2>
+      {{#if subHeading}}
+        <h3>{{subHeading}}</h3>
+      {{/if}}
+      <div class="rich-text">{{{text}}}</div>
+    {{/eq}}
+    {{#eq bannerType 'banner-hero'}}
+      <h1>{{heading}}</h1>
+      {{#if subHeading}}
+        <h2>{{subHeading}}</h2>
+      {{/if}}
+    {{/eq}}
+    {{#eq bannerType 'banner-card'}}
+      <h2>{{heading}}</h2>
+      {{#if subHeading}}
+        <h3>{{subHeading}}</h3>
+      {{/if}}
+    {{/eq}}
+    {{#eq bannerType 'banner-card-medium'}}
+      <h2>{{heading}}</h2>
+      {{#if subHeading}}
+        <h3>{{subHeading}}</h3>
+      {{/if}}
+    {{/eq}}
+    {{#eq bannerType 'banner-card-mini'}}
+        {{heading}}
+    {{/eq}}
+    {{#eq bannerType 'banner-card-link-list'}}
+      <table>
+        <thead>
+          <th>{{departureAirport}}</th>
+          <th>{{travelInfo}}</th>
+        </thead>
+        <tbody>
+          {{#each links}}
+          <tr>
+            <td><a href="{{linkUrl}}">{{city}}</a></td>
+            <td><a href="{{linkUrl}}">{{price}}</a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{/eq}}
+    {{#if buttonLabel}}
+    <button class="btn-md">{{buttonLabel}}</button>
+    {{/if}}
+    {{#if linkLabel}}
+    <div><span class="a">{{linkLabel}}{{#startsWith 'https://' bannerLink}} {{>partials/icons/svgInternal name='cl--new-window'}}{{/startsWith}}</span></div>
+    {{/if}}
+  </div>
+</{{#if bannerLink}}a{{else}}div{{/if}}>

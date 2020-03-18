@@ -1,0 +1,38 @@
+.sas-main-brand {
+  @include font-size(14);
+
+  .sas-container {
+    padding: $margin-normal * 2 $margin-normal;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+
+    > div {
+      margin: 0;
+      padding: 0 $margin-normal;
+      line-height: 24px;
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+
+      &:nth-child(n+2) {
+        border-top: 1px solid $g0-dark-color;
+        padding-top: $margin-normal;
+        margin-top: $margin-normal;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+
+      > div:nth-child(n+2) {/* stylelint-disable-line */
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}

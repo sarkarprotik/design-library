@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>cart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="cart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.5,14 C8.328473,14 9,14.67153 9,15.5 C9,16.32835 8.328473,17 7.5,17 C6.671527,17 6,16.32835 6,15.5 C6,14.67153 6.671527,14 7.5,14 Z M13.5,14 C14.328473,14 15,14.67153 15,15.5 C15,16.32835 14.328473,17 13.5,17 C12.671527,17 12,16.32835 12,15.5 C12,14.67153 12.671527,14 13.5,14 Z M4.39737143,3 L5.11348571,5.28571 L17,5.28571 L15.8544,12.14286 L6.15371429,13.28126 L3.25177143,4.14286 L1,4.14286 L1,3 L4.39737143,3 Z" id="Shape" fill="#000099"></path>
+    </g>
+</svg>

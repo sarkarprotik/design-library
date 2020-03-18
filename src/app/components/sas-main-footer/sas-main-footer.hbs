@@ -1,0 +1,16 @@
+<footer class="sas-main-footer">
+  {{#if widgetCss}}<style>{{{widgetCss}}}</style>{{/if}}
+  <section class="footer-links">
+    <div class="sas-container links-section">
+      {{> components/sas-main-footer/sas-main-footer-links}}
+      {{> components/sas-marketselector/sas-marketselector}}
+    </div>
+    <div class="sas-container">
+      {{> components/sas-main-footer/sas-main-payment-icons}}
+      <p class="p1-sm">{{> partials/icons/svgInternal name="cl--new-window"}} {{i18n @root.market "externalSiteLegend"}}</p>
+    </div>
+  </section>
+  {{> components/sas-main-footer/sas-main-info-links}}
+  {{> components/sas-main-footer/sas-main-brand}}
+  {{#if widgetJs}}<script>{{{widgetJs}}}</script>{{/if}}
+</footer>

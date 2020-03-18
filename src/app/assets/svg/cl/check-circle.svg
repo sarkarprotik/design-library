@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="check-circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,2 C14.418278,2 18,5.581722 18,10 C18,14.418278 14.418278,18 10,18 C5.581722,18 2,14.418278 2,10 C2,5.581722 5.581722,2 10,2 Z M13.3160531,6.63192356 L8.64993717,10.9943272 L6.68090807,9.1585671 L5.31706602,10.6214187 L8.65183305,13.7304801 L14.681921,8.09288377 L13.3160531,6.63192356 Z" id="Shape" fill="#30A030"></path>
+    </g>
+</svg>

@@ -1,0 +1,282 @@
+{
+  "sasForm": [
+    {
+      "heading": "Bli sportkund",
+      "action": "/sendMe.html",
+      "method": "post",
+      "submitLabel": "Skicka",
+      "fieldSets": [
+        {
+          "heading": "Företags- eller klubbinformation",
+          "fields": [
+            {
+              "name": "organisationname",
+              "label": "Företags-/ föreningsnamn",
+              "mandatory": true,
+              "class": "long first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "Vv fyll i namn"
+            },
+            {
+              "name": "organisationNumber",
+              "label": "Org nummer",
+              "mandatory": true,
+              "class": "short",
+              "dataValidation": "^[\\d-]{10,12}$",
+              "errorMessage": "Vv fyll i siffror"
+            },
+            {
+              "name": "address",
+              "label": "Företagsadress",
+              "mandatory": true,
+              "class": "full first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "Vv fyll i adress"
+            },
+            {
+              "name": "zip",
+              "label": "Postnummer",
+              "mandatory": true,
+              "class": "short first",
+              "dataValidation": "^[\\d\\s]{4,6}$",
+              "errorMessage": "Vv fyll i postnummer"
+            },
+            {
+              "name": "city",
+              "label": "Ort",
+              "mandatory": true,
+              "class": "long",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "Vv fyll i ort"
+            },
+            {
+              "name": "country",
+              "label": "Land",
+              "mandatory": true,
+              "selected": true,
+              "class": "long",
+              "type": "select",
+              "optionLabel": "Välj land",
+              "options": [
+                {
+                  "name": "United Arab Emirates",
+                  "value": "United Arab Emirates"
+                },
+                {
+                  "name": "Austria",
+                  "value": "Austria"
+                },
+                {
+                  "name": "Australia",
+                  "value": "Australia"
+                },
+                {
+                  "name": "Belgium",
+                  "value": "Belgium"
+                },
+                {
+                  "name": "Switzerland",
+                  "value": "Switzerland"
+                },
+                {
+                  "name": "China",
+                  "value": "China"
+                },
+                {
+                  "name": "Czech Republic",
+                  "value": "Czech Republic"
+                },
+                {
+                  "name": "Germany",
+                  "value": "Germany"
+                },
+                {
+                  "name": "Denmark",
+                  "value": "Denmark"
+                },
+                {
+                  "name": "Estonia",
+                  "value": "Estonia"
+                },
+                {
+                  "name": "Spain",
+                  "value": "Spain"
+                },
+                {
+                  "name": "Finland",
+                  "value": "Finland"
+                },
+                {
+                  "name": "France",
+                  "value": "France"
+                },
+                {
+                  "name": "Greece",
+                  "value": "Greece"
+                },
+                {
+                  "name": "Hong Kong",
+                  "value": "Hong Kong"
+                },
+                {
+                  "name": "Hungary",
+                  "value": "Hungary"
+                },
+                {
+                  "name": "Ireland",
+                  "value": "Ireland"
+                },
+                {
+                  "name": "Iceland",
+                  "value": "Iceland"
+                },
+                {
+                  "name": "Italy",
+                  "value": "Italy"
+                },
+                {
+                  "name": "Japan",
+                  "value": "Japan"
+                },
+                {
+                  "name": "Lithuania",
+                  "value": "Lithuania"
+                },
+                {
+                  "name": "Luxembourg",
+                  "value": "Luxembourg"
+                },
+                {
+                  "name": "Latvia",
+                  "value": "Latvia"
+                },
+                {
+                  "name": "Malaysia",
+                  "value": "Malaysia"
+                },
+                {
+                  "name": "Netherlands",
+                  "value": "Netherlands"
+                },
+                {
+                  "name": "Norway",
+                  "value": "Norway"
+                },
+                {
+                  "name": "Philippines",
+                  "value": "Philippines"
+                },
+                {
+                  "name": "Poland",
+                  "value": "Poland"
+                },
+                {
+                  "name": "Russian Federation",
+                  "value": "Russian Federation"
+                },
+                {
+                  "name": "Sweden",
+                  "value": "Sweden",
+                  "selected": true
+                },
+                {
+                  "name": "Singapore",
+                  "value": "Singapore"
+                },
+                {
+                  "name": "Thailand",
+                  "value": "Thailand"
+                },
+                {
+                  "name": "United Kingdom",
+                  "value": "United Kingdom"
+                },
+                {
+                  "name": "United States",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "name": "sportOrganisation",
+              "label": "Sportförbund",
+              "mandatory": true,
+              "type": "select",
+              "optionLabel": "",
+              "options": [
+                {
+                  "name": "Sveriges Riksidrottsförbund",
+                  "value": "Sveriges Riksidrottsförbund"
+                },
+                {
+                  "name": "Idrottsföreningar och –Klubb",
+                  "value": "Idrottsföreningar och –Klubb"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Kontraktsansvarig",
+          "fields": [
+            {
+              "name": "firstName",
+              "label": "Förnamn",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "Vv fyll i namn"
+            },
+            {
+              "name": "surName",
+              "label": "Efternamn",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "Vv fyll i namn"
+            },
+            {
+              "name": "mail",
+              "label": "E-postadress",
+              "mandatory": true,
+              "type": "email",
+              "class": "long first",
+              "dataValidation": "[^@]+@[^\\.]+\\..+",
+              "errorMessage": "Vv fyll i e-post"
+            },
+            {
+              "name": "tel",
+              "label": "Telefonnummer",
+              "mandatory": true,
+              "type": "phone",
+              "dataValidation": "^[\\d\\s+-]{8,14}$",
+              "errorMessage": "Vv fyll i telefonnummer"
+            }
+          ]
+        },
+        {
+          "heading": "Textarea (ej sportform)",
+          "fields": [
+            {
+              "name": "message",
+              "label": "Meddelande",
+              "type": "textarea",
+              "class": "long first"
+            }
+          ]
+        },
+        {
+          "checkRadio": true,
+          "fields": [
+            {
+              "name": "Godkänn",
+              "value": "Yes",
+              "mandatory": true,
+              "class": "long first",
+              "label": "Jag har läst och godkänner <a href=\"https://www.sas.se/content/dam/sas/pdfs/corporate/sas-sports-agreement-en.pdf\" target=\"_blank\">avtalsvillkoren</a>. Jag har rätt att teckna SAS Sportavtal för ovanstående förening/organisation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

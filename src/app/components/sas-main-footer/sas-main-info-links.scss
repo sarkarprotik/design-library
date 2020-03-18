@@ -1,0 +1,74 @@
+.sas-main-info-links {
+  @include font-size(14);
+  @extend %focus-on-blue;
+  background-color: $b3-color;
+  color: $white-color;
+
+  .sas-container {
+    padding: $margin-normal * 2 $margin-normal;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    > ul {
+      &:nth-child(n+2) {
+        border-top: 1px solid $white-color;
+        padding-top: $margin-normal;
+        margin-top: $margin-normal;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+
+      > ul:nth-child(n+2) {
+        border-top: none;
+        border-left: 1px solid $b2-color;
+        padding: 0 0 0 $margin-normal * 2;
+        margin-top: 0;
+      }
+    }
+  }
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &.text {
+      align-self: center;
+      padding: $margin-normal;
+      font-weight: bold;
+    }
+
+    a {
+      @extend %focus-on-blue;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      padding: $margin-normal;
+      text-decoration: none;
+
+      &:hover {
+        background: rgba($b4-color, .3);
+      }
+    }
+  }
+
+  .social {
+    .sas-icon {
+      @include font-size(24);
+    }
+  }
+
+  a {
+  }
+}

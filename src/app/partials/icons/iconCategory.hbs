@@ -1,0 +1,13 @@
+<h3 class="color-b3">{{name}} <button class="btn btn-icon btn-scale-icons">Scale</button></h3>
+<div class="flexbox icon-container">
+  {{#each icons}}
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-{{name}}">
+        {{> partials/icons/svgInternal additionalClass=../additionalClass}}
+      </div>
+      <div class="icon-name">{{name}}</div>
+    </div>
+  </div>
+  {{/each}}
+</div>

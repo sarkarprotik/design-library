@@ -1,0 +1,86 @@
+$hamburger-size: 56px;
+
+.hamburger-toggle {
+  background: transparent;
+  color: currentColor;
+  appearance: none;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: $hamburger-size;
+  height: $hamburger-size;
+  font-size: $hamburger-size;
+  line-height: 1;
+  text-indent: -9999px;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  transform: scale(.6);
+
+  span {
+    display: block;
+    position: absolute;
+    top: $hamburger-size / 2;
+    left: 50%;
+    width: 28px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background-color: currentColor;
+    transition-property: top, transform;
+    transition-duration: .3s, .3s;
+    transition-delay: .3s, 0;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: currentColor;
+      content: '';
+      transition-property: top, transform;
+      transition-duration: .3s, .3s;
+      transition-delay: .3s, 0;
+    }
+
+    &::before {
+      top: 10px;
+      background-color: currentColor;
+      transition-property: top, transform;
+    }
+
+    &::after {
+      bottom: 10px;
+      background-color: currentColor;
+      transition-property: bottom, transform;
+    }
+  }
+
+  &.expanded {
+    span {
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition-delay: .3s, .6s;
+
+      &::before {
+        top: 0;
+        transform: rotate(0);
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+      }
+
+      &::before,
+      &::after {
+        transition-delay: .3s, .6s;
+      }
+    }
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

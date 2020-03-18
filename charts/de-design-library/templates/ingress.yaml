@@ -1,0 +1,25 @@
+{{- if .Values.ingress.enabled -}}
+{{- $fullName := include "de-design-library.fullname" . -}}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+    app.kubernetes.io/name: {{ include "de-design-library.name" . }}
+    helm.sh/chart: {{ include "de-design-library.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: {{ .Values.ingress.rewriteTarget | default "" }}/$1
+spec:
+  rules:
+  {{- range .Values.ingress.hosts }}
+    - host: {{ . | quote}}
+      http:
+        paths:
+          - path: {{ $.Values.ingress.path }}/(.*)
+            backend:
+              serviceName: {{ $fullName }}
+              servicePort: http
+  {{- end }}
+{{- end }}

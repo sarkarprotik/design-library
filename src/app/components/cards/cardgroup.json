@@ -1,0 +1,221 @@
+{
+  "cardgroup": [{
+    "cardHeading": "Banner Mini Group",
+    "cards": [{
+      "bannerType": "banner-card-mini",
+      "heading": "Flyg",
+      "bannerLink": "http://www.sas.se",
+      "icons": [{
+        "name": "cl--plane-up"
+       }]
+    },
+    {
+      "bannerType": "banner-card-mini",
+      "heading": "Hotell",
+      "bannerLink": "http://www.sas.se",
+      "icons": [{
+        "name": "cl--hotel"
+      }]
+    },{
+      "bannerType": "banner-card-mini",
+      "heading": "Flyg + Hotell",
+      "bannerLink": "http://www.sas.se",
+      "icons": [{
+        "name": "cl--plane-up"
+      },
+      {
+        "name": "cl--hotel"
+      }]
+    }]
+  },
+  {
+    "cardHeading": "Banner Card Group",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "banner-card",
+      "imageClass": "sas-image-fill",
+      "imageSource": "/content/dam/sas/images/people/people_GettyImages-672154975_3.jpg",
+      "heading": "Våra erbjudanden just nu",
+      "subHeading": "Bra priser till utvalda städer i Europa",
+      "buttonLabel": "Boka senast 28/1",
+      "bannerLink": "http://www.sas.se"
+    },
+    {
+      "bannerType": "banner-card",
+      "imageClass": "sas-image-fill",
+      "imageSource": "/content/dam/sas/images/people/people_GettyImages-1090688076_1600x1000.jpg",
+      "heading": "Mer erbjudanden",
+      "subHeading": "Fina resmål",
+      "buttonLabel": "Boka senast 28/1",
+      "bannerLink": "http://www.sas.se"
+    },
+    {
+      "bannerType": "banner-card",
+      "imageClass": "sas-image-fill",
+      "imageSource": "/content/dam/sas/images/fleet/fleet-onboard-mg-9698.jpg",
+      "heading": "Våra erbjudanden just nu",
+      "subHeading": "Bra priser till utvalda städer i Europa",
+      "buttonLabel": "Boka senast 28/1",
+      "bannerLink": "http://www.sas.se"
+    }]
+  },
+
+  {
+    "cardHeading": "Banner Medium Group",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "banner-card-medium",
+      "heading": "Lågpris",
+      "subHeading": "Hitta flygbiljetter till hela världen",
+      "bannerColor": "bg-b4",
+      "bannerLink": "http://www.sas.se"
+    },
+    {
+      "bannerType": "banner-card-medium",
+      "heading": "Hållbarhet",
+      "subHeading": "Läs mer om vägen mot ett mer hållbart resande",
+      "bannerColor": "bg-b3",
+      "bannerLink": "http://www.sas.se"
+    },
+    {
+      "bannerType": "banner-card-medium",
+      "heading": "SAS Ungdom",
+      "subHeading": "Vårt bästa erbjudande för dig under 25 år",
+      "bannerColor": "bg-b5",
+      "bannerLink": "http://www.sas.se"
+    }]
+  },
+  {
+    "cardHeading": "Banner with Link List",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "banner-card-link-list",
+      "imageSource": "/content/dam/sas/images/destinations/nordics/got-GettyImages-138708740.jpg",
+      "departureAirport": "Stockholm",
+      "travelInfo": "enkel från",
+      "links": [{
+        "city": "Göteborg",
+        "price": "599:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-GOT-20200702-20200709_a1c0i0y0_REV"
+      },
+      {
+        "city": "Umeå",
+        "price": "599:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-UME-20200707-20200714_a1c0i0y0_REV"
+      },
+      {
+        "city": "Malmö",
+        "price": "719:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-MMX-20200411-20200418_a1c0i0y0_REV"
+      },
+      {
+        "city": "Östersund",
+        "price": "610:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-OSD-20200522-20200529_a1c0i0y0_REV"
+      }]
+    },
+    {
+      "bannerType": "banner-card-link-list",
+      "imageSource": "/content/dam/sas/images/destinations/europe/lhr_london_the-gherkin_696468-pxherecom.jpg",
+      "departureAirport": "Stockholm",
+      "travelInfo": "enkel från",
+      "links": [{
+        "city": "Bryssel",
+        "price": "359:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-GOT-20200702-20200709_a1c0i0y0_REV"
+      },
+      {
+        "city": "London",
+        "price": "479:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-UME-20200707-20200714_a1c0i0y0_REV"
+      },
+      {
+        "city": "Rom",
+        "price": "809:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-MMX-20200411-20200418_a1c0i0y0_REV"
+      },
+      {
+        "city": "Malaga",
+        "price": "809:-",
+        "linkUrl": "https://www.sas.se/lowpricecalendar?search=RT_ARN-OSD-20200522-20200529_a1c0i0y0_REV"
+      }]
+    },
+    {
+      "bannerType": "banner-card",
+      "imageClass": "sas-image-fill",
+      "imageSource": "/content/dam/sas/images/people/people_GettyImages-672154975_3.jpg",
+      "heading": "Våra erbjudanden just nu",
+      "subHeading": "Bra priser till utvalda städer i Europa",
+      "buttonLabel": "Boka senast 28/1",
+      "bannerLink": "http://www.sas.se"
+    }]
+  },
+  {
+    "cardHeading": "Teaser card group",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "teaser-card",
+      "imageSource": "http://localhost:3000/content/dam/sas/images/customer-journey/airport-DSC3387.jpg",
+      "heading": "Behöver du mer bagage?",
+      "bannerLink": "http://www.sas.se",
+      "buttonLabel": "Köp extra bagage",
+      "text": "Om du behöver checka in fler väskor kan du köpa extra bagage i förskott"
+    },
+    {
+      "bannerType": "teaser-card",
+      "imageSource": "/content/dam/sas/images/people/people_GettyImages-672154975_3.jpg",
+      "heading": "Behöver du mer bagage?",
+      "bannerLink": "http://www.sas.se",
+      "buttonLabel": "Köp extra bagage",
+      "text": "Om du behöver checka in fler väskor kan du köpa extra bagage i förskott"
+    },
+    {
+      "bannerType": "teaser-card",
+      "imageSource": "http://localhost:3000/content/dam/sas/images/customer-journey/airport-DSC3387.jpg",
+      "heading": "Behöver du mer bagage?",
+      "bannerLink": "http://www.sas.se",
+      "buttonLabel": "Köp extra bagage",
+      "text": "Om du behöver checka in fler väskor kan du köpa extra bagage i förskott"
+    }]
+  },
+  {
+    "cardHeading": "Image card group",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "image-card",
+      "imageSource": "https://scandinaviantraveler.com/sites/default/files/styles/api_medium/public/sascaptains-london-1140.jpg?itok=SyFNcsbn",
+      "heading": "Ät och ha trevligt i London",
+      "bannerLink": "https://scandinaviantraveler.com/se/manniskor/at-och-ha-trevligt-i-london?stwebapi=1&amp;utm_source=stwebapi",
+      "linkLabel": "Läs mer",
+      "text": "Christer Lundström har varit SAS-pilot i 24 år och flugit på både långa och korta distanser. London har varit ett vanligt resmål, både i jobbet och på fritiden. Här presenterar han sina favoritrestauranger och andra trevliga ställen i den brittiska huvudstaden."
+    },
+    {
+      "bannerType": "image-card",
+      "imageSource": "https://scandinaviantraveler.com/sites/default/files/styles/api_medium/public/neighborhoods-1140x619.jpg?itok=bGyubE6a",
+      "heading": "Heta stadsdelar i Europa att besöka 2020",
+      "bannerLink": "https://scandinaviantraveler.com/se/resmal/heta-stadsdelar-i-europa-att-besoka-2020?stwebapi=1&amp;utm_source=stwebapi",
+      "linkLabel": "Läs mer",
+      "text": "I flera europeiska länder har nya hippa stadsdelar börjat dra uppmärksamheten till sig. Här är fyra områden att ha koll på och besöka under 2020."
+    },
+    {
+      "bannerType": "image-card",
+      "imageSource": "https://scandinaviantraveler.com/sites/default/files/styles/api_medium/public/externals/d6031cca863b189bd831784eb248a07b.jpg?itok=3W9XgwlI",
+      "heading": "Upplev London",
+      "bannerLink": "https://scandinaviantraveler.com/se/play/upplev-london?stwebapi=1&amp;utm_source=stwebapi",
+      "linkLabel": "Läs mer",
+      "text": "Följ med Scandinavian Traveler till London och träffa Londonborna Raymond från Italien och hans flickvän Sabina från Sverige"
+    }]
+  },
+  {
+    "cardHeading": "Video card group",
+    "cardHeadingClass": "color-b3",
+    "cards": [{
+      "bannerType": "video-card",
+      "videoSource": "https://www.youtube.com/embed/e1zcxRDzp9k"
+    },
+    {
+      "bannerType": "video-card",
+      "videoSource": "https://www.youtube.com/embed/YgK24jiNfiM"
+    }]
+  }]
+}

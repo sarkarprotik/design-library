@@ -1,0 +1,49 @@
+@import './sas-main-footer-links';
+@import '../sas-marketselector/sas-marketselector';
+@import './sas-main-info-links';
+@import './sas-main-brand';
+
+.sas-main-footer {
+  float: none;
+  clear: both;
+
+  .sas-container {
+    max-width: $max-page-width;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    background: $g0-color;
+    padding: $margin-normal * 5 0 $margin-normal;
+  }
+
+  .links-section {
+    width: 100%;
+    max-width: $max-page-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    .sas-main-footer-links,
+    .sas-marketselector {
+      padding: 0 $margin-normal $margin-normal * 4;
+    }
+  }
+
+  .sas-main-payment-icons {
+    display: flex;
+    margin: -($margin-normal * 2) 0 0;
+    padding: 0 $margin-normal * 2 0;
+    font-size: 32px;
+    list-style: none;
+    filter: saturate(0);
+
+    + p {
+      padding: $margin-normal $margin-normal * 2;
+    }
+  }
+}

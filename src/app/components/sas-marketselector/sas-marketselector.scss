@@ -1,0 +1,44 @@
+.sas-marketselector {
+  flex-grow: 1;
+
+  &.flysas-form {
+    flex-direction: column;
+
+    .sas-input {
+      input,
+      select {
+        background-color: $white-color;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .sas-input-list {
+    display: flex;
+    flex-flow: column;
+
+    .sas-input {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  button {
+    @include font-size(16);
+    background: $b1-color;
+    color: $white-color;
+    padding: 0;
+    width: 100%;
+    height: 48px;
+
+    &:hover {
+      background: $b1-dark-color;
+    }
+  }
+}

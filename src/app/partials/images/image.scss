@@ -1,0 +1,32 @@
+.sas-image {
+  &.sas-image-fill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.ratio-16-9 {
+    height: 0;
+    padding-bottom: percentage(9 / 16);
+  }
+
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  a & {
+    transition: all .1s ease-in-out;
+  }
+
+  a:hover & {
+    top: -1%;
+    right: -1%;
+    bottom: -1%;
+    left: -1%;
+  }
+}

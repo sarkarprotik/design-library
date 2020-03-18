@@ -1,0 +1,20 @@
+<h1 class="color-b3">
+  <i>{{{data.navigation.version}}}</i>
+  {{{data.navigation.title}}}
+</h1>
+
+{{#each data.navigation.categories}}
+<div class="flysas-accordion">
+  <div class="accordion-btn">
+    <button class="btn btn-toggle" aria-expanded="false">{{{title}}}</button>
+  </div>
+  <div class="accordion-content">
+    <div class="items">
+      {{#each items}}
+      <a href="{{@root.appPath}}{{href}}">{{name}}</a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+{{/each}}
+

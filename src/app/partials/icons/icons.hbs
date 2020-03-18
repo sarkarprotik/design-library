@@ -1,0 +1,115 @@
+<h2 class="color-b3">Icons</h2>
+<h3 class="color-b3">Directions</h3>
+<p>To rotate, add classes for direction: right, left and down</p>
+<div class="flexbox icon-container bkg-b0">
+  <div class="item item-sm">
+    <div class="icon-box ">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--arrow-up" additionalClass="up scale-2"}}
+      </div>
+      <div class="icon-name">.up</div>
+    </div>
+  </div>
+
+ <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--arrow-up" additionalClass="right scale-2"}}
+      </div>
+      <div class="icon-name">.right</div>
+    </div>
+  </div>
+
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--arrow-up" additionalClass="down scale-2"}}
+      </div>
+      <div class="icon-name">.down</div>
+    </div>
+  </div>
+
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--arrow-up" additionalClass="left scale-2"}}
+      </div>
+      <div class="icon-name">.left</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="color-b3">Additional features</h3>
+<p>You could also add a box or a circle around the icon and use color codes to make specific icons.</p>
+
+<div class="flexbox icon-container bkg-b0">
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--heart" additionalClass="color-r scale-2"}}
+      </div>
+      <div class="icon-name">.color-g</div>
+    </div>
+  </div>
+
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--arrow-up" additionalClass="circled right scale-2"}}
+      </div>
+      <div class="icon-name">.circled .right</div>
+    </div>
+  </div>
+
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--check" additionalClass="boxed bg-g scale-2"}}
+      </div>
+      <div class="icon-name">.boxed .bg-g</div>
+    </div>
+  </div>
+
+  <div class="item item-sm">
+    <div class="icon-box">
+      <div class="icon-svg icon-svg-cl--arrow-up">
+        {{> partials/icons/svgInternal name="cl--plane-up" additionalClass="right up circled bg-b0 color-b3 scale-2"}}
+      </div>
+      <div class="icon-name">.right .up .circled .bg-b0 .color-b3</div>
+    </div>
+  </div>
+</div>
+
+{{#each iconCategories}}
+  {{> partials/icons/iconCategory}}
+{{/each}}
+
+
+
+{{#each iconExtraCategories}}
+  {{> partials/icons/iconCategory}}
+{{/each}}
+{{#each iconFlagsCategories}}
+  {{> partials/icons/iconCategory}}
+{{/each}}
+{{#each iconOtherCategories}}
+  {{> partials/icons/iconCategory}}
+{{/each}}
+
+
+
+<h3 class="color-b3">Symbol sprite "svg-use-tag"</h3>
+<pre>
+  <code class="language-html">
+     {{> partials/icons/svgInternal name="cl--baggage"}}
+     {{> partials/icons/svgInternal name="cl--lounge"}}
+     <xscript src="/v2/de-design-library/assets/js/partials/icons/build.js" async></xscript>
+  </code>
+</pre>
+
+<h3 class="color-b3">Separate use of icon (for img-tag and css background)</h3>
+<pre>
+  <code class="language-html">
+    <img src="/v2/de-design-library/assets/icons/raw/cl--check?color=0087f5">
+  </code>
+</pre>

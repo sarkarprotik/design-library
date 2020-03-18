@@ -1,0 +1,69 @@
+<style>.tool-nav {display: none;}</style>
+
+<h2 class="color-b3">Modals</h2>
+
+<h3 class="color-b3">Default</h3>
+<button class="btn btn-lg" aria-haspopup="modal" data-modal="confirm-flight">Show first modal</button>
+
+<h3 class="color-b3">Wide</h3>
+<button class="btn btn-lg" aria-haspopup="modal" data-modal="confirm-flight2">Show second modal</button>
+<button class="btn btn-lg" aria-haspopup="modal" data-modal="confirm-flight2">Show second modal with another button</button>
+<a href="/misc/terms-and-conditions/cookie-policy" aria-haspopup="modal" data-modal="dynamic-modal">Open dynamic modal</a>
+
+<div class="flysas modal" id="confirm-flight" role="dialog" aria-modal="true" aria-labelledby="modal-title" data-onload="false">
+  <div class="modal-content">
+    <h1 id="modal-title" class="h2 modal-title">Please confirm change of flight</h1>
+    <button type="button" class="btn btn-lg btn-close" data-close="true" aria-label="Close Modal">
+      {{> partials/icons/svgInternal name="in--close" text="Close modal"}}
+    </button>
+    <p>Change flight means your original flight will be cancelled and replaced by the new one. This applies to all passengers in the booking.</p>
+    <div class="modal-actions">
+      <button class="btn btn-lg btn-yes" data-modal="confirm-flight2">Show second modal ontop</button>
+      <button class="btn btn-lg btn-no" data-close="true">Close first modal</button>
+    </div>
+  </div>
+</div>
+
+<div class="flysas modal modal-wide" id="confirm-flight2" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <h1 id="modal-title" class="h2 modal-title">Please confirm change of flight</h1>
+    <button type="button" class="btn btn-lg btn-close" data-close="true" aria-label="Close Modal">
+      {{> partials/icons/svgInternal name="in--close" text="Close modal"}}
+    </button>
+    <p>Change flight means your original flight will be cancelled and replaced by the new one. This applies to all passengers in the booking.</p>
+    <div class="flysas-accordion">
+      <div class="accordion-btn">
+        <button class="btn btn-toggle" aria-expanded="false">
+          Ingår bagage i SAS Go Light?
+        </button>
+      </div>
+      <div class="accordion-content">
+        <p>SAS Go Light omfattar inget incheckat bagage. Observera att vi inte längre erbjuder kostnadsfritt bagage i SAS Go Light för medlemmar i EuroBonus Silver, Guld eller Diamant eller medlemmar i Star Alliance Gold. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flysas modal modal-wide" id="dynamic-modal" role="dialog" aria-modal="true">
+  <div class="modal-content">
+    <button type="button" class="btn btn-lg btn-close" data-close="true" aria-label="Close Modal">
+      {{> partials/icons/svgInternal name="in--close" text="Close modal"}}
+    </button>
+    <div class="dynamic-content"></div>
+  </div>
+</div>
+
+<pre>
+  <code class="language-html">
+    <button class="btn btn-lg" aria-haspopup="modal" data-modal="id-of-modal">Show first modal</button>
+    <div class="flysas modal modal-wide" id="id-of-modal" role="dialog" aria-modal="true" aria-labelledby="id-of-modal-title">
+      <div class="modal-content">
+        <h1 id="id-of-modal-title" class="h2 modal-title">Please confirm change of flight</h1>
+        <button type="button" class="btn btn-lg btn-close" data-close="true" aria-label="Close Modal">
+          {{> partials/icons/svgInternal name="in--close" text="Close modal"}}
+        </button>
+        <p>Change flight means your original flight will be cancelled and replaced by the new one. This applies to all passengers in the booking.</p>
+      </div>
+    </div>
+  </code>
+</pre>

@@ -1,0 +1,181 @@
+{
+  "version": "Beta v0.7",
+  "title": "Digital<br>Design<br>System",
+  "categories": [
+    {
+      "title": "Intro",
+      "items": [
+        {
+          "name": "Info",
+          "href": "/intro/info",
+          "view": "tool-ui/info"
+        },
+        {
+          "name": "Onboarding",
+          "href": "/intro/onboarding",
+          "view": "tool-ui/onboarding"
+        },
+        {
+          "name": "Way of working",
+          "href": "/intro/wow",
+          "view": "tool-ui/wow"
+        }
+      ]
+    },
+    {
+      "title": "Styleguide",
+      "items": [
+        {
+          "name": "Colors",
+          "href": "/styleguide/colors",
+          "view": "styleguide/colors/colors"
+        },
+        {
+          "name": "Typography",
+          "href": "/styleguide/typography",
+          "view": "styleguide/typography/typography"
+        },
+        {
+          "name": "Fonts",
+          "href": "/styleguide/fonts",
+          "view": "styleguide/fonts/fonts"
+        }
+      ]
+    },
+    {
+      "title": "Partials",
+      "items": [
+        {
+          "name": "Icons",
+          "href": "/partials/icons",
+          "view": "partials/icons/icons"
+        },
+        {
+          "name": "Buttons",
+          "href": "/partials/buttons",
+          "view": "partials/buttons/buttons"
+        },
+        {
+          "name": "Links",
+          "href": "/partials/links",
+          "view": "partials/links/links"
+        },
+        {
+          "name": "Tables",
+          "href": "/partials/tables",
+          "view": "partials/tables/page"
+        },
+        {
+          "name": "Lists",
+          "href": "/partials/lists",
+          "view": "partials/lists/page"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "name": "Cards",
+          "href": "/components/cards",
+          "view": "components/cards/page"
+        },
+        {
+          "name": "Modals",
+          "href": "/components/modals",
+          "view": "components/modals/modals"
+        },
+        {
+          "name": "Tabs",
+          "href": "/components/tabs",
+          "view": "components/tabs/tabs"
+        },
+        {
+          "name": "Forms",
+          "href": "/components/forms",
+          "view": "components/forms/forms"
+        },
+        {
+          "name": "Form",
+          "href": "/components/sas-form",
+          "view": "components/forms/sas-form"
+        },
+        {
+          "name": "Toggles",
+          "href": "/components/toggles",
+          "view": "components/toggles/toggles"
+        },
+        {
+          "name": "Accordions",
+          "href": "/components/accordions",
+          "view": "components/accordions/accordions"
+        },
+        {
+          "name": "Highlight",
+          "href": "/components/highlights/",
+          "view": "components/sas-highlight/page"
+        },
+        {
+          "name": "SAS Main Header",
+          "href": "/components/sas-main-header/se-sv",
+          "view": "components/sas-main-header/sas-main-header"
+        },
+        {
+          "name": "SAS Main Footer",
+          "href": "/components/sas-main-footer/se-sv",
+          "view": "components/sas-main-footer/sas-main-footer"
+        },
+        {
+          "name": "Flippin' Numbers",
+          "href": "/components/sas-flip-number",
+          "view": "components/sas-flip-number/sas-flip-number"
+        },
+        {
+          "name": "Spinning Numbers",
+          "href": "/components/sas-spin-number",
+          "view": "components/sas-spin-number/sas-spin-number"
+        }
+      ]
+    },
+    {
+      "title": "S4S Components",
+      "items": [
+        {
+          "name": "S4S Login",
+          "href": "/s4s-components/s4s-login",
+          "view": "s4s-components/s4s-login/page"
+        }
+      ]
+    },
+    {
+      "title": "Labs",
+      "items": [
+        {
+          "name": "Crew Search",
+          "href": "/labs/crew-search",
+          "view": "labs/crew-search/crew-search"
+        }
+      ]
+    },
+    {
+      "title": "Widgets",
+      "items": [
+        {
+          "name": "Barview",
+          "href": "/widgets/barview",
+          "view": "widgets/barview/barview"
+        },
+        {
+          "name": "Content Search",
+          "href": "/widgets/content-search",
+          "view": "widgets/content-search/content-search"
+        },
+        {
+          "name": "Vacation Planner",
+          "href": "/widgets/vacation-planner",
+          "view": "widgets/vacation-planner/vacation-planner"
+        }
+      ]
+    }
+  ]
+}

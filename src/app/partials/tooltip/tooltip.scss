@@ -1,0 +1,23 @@
+.sas-tooltip {
+  @extend .p1;
+  position: absolute;
+  top: -#{$margin-normal * 2};
+  right: 0;
+  border-radius: $border-radius-normal;
+  border-bottom-right-radius: 0;
+  transform: translateY(-100%);
+  padding: $margin-normal;
+  background: $white-color;
+  filter: drop-shadow(0 0 7px #999);
+
+  &::after {
+    content: '';
+    height: 0;
+    border: $margin-normal * 2 solid transparent;
+    border-top: $margin-normal * 2 solid white;
+    position: absolute;
+    bottom: 0;
+    right: $margin-normal * 3 + $margin-normal / 2;
+    transform: translate(50%, 50%) rotate(225deg);
+  }
+}

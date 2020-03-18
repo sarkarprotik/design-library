@@ -1,0 +1,30 @@
+<form id="market-form" class="flysas-form sas-marketselector">
+  <ul class="sas-input-list">
+    <li class="sas-input focused">
+      <label class="form-field" for="market-country">
+        <span class="label">{{i18n @root.market "marketSelector.location"}}</span>
+        <select id="market-country">
+        {{#each countries}}
+          <option value="{{countryCode}}">{{countryName}}</option>
+        {{/each}}
+        </select>
+      </label>
+    </li>
+    <li class="sas-input focused">
+      <label class="form-field" for="market-language">
+        <span class="label">{{i18n @root.market "marketSelector.lang"}}</span>
+        <select id="market-language"></select>
+      </label>
+    </li>
+    <li class="sas-input focused">
+      <label class="form-field" for="market-origin">
+        <span class="label">{{i18n @root.market "marketSelector.airport"}}</span>
+        <select id="market-origin"></select>
+      </label>
+    </li>
+    <li>
+      <button id="market-apply-btn" class="btn btn-lg" type="submit">{{i18n @root.market "marketSelector.applyChanges"}}</button>
+    </li>
+  </ul>
+  <script>var marketJson = {{{JSONstringify countries}}};</script>
+</form>

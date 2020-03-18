@@ -1,0 +1,57 @@
+@sassoption color-format preserve;
+
+$colors-list: (
+  b0: $b0-color,
+  b0-dark: $b0-dark-color,
+  b0-light: $b0-light-color,
+  b1: $b1-color,
+  b1-dark: $b1-dark-color,
+  b2: $b2-color,
+  b2-dark: $b2-dark-color,
+  b3: $b3-color,
+  b3-dark: $b3-dark-color,
+  b4: $b4-color,
+  b4-dark: $b4-dark-color,
+  b5: $b5-color,
+  b5-dark: $b5-dark-color,
+  r: $r-color,
+  r-dark: $r-dark-color,
+  s1: $s1-color,
+  s1-dark: $s1-dark-color,
+  s2: $s2-color,
+  s2-dark: $s2-dark-color,
+  g: $g-color,
+  g-dark: $g-dark-color,
+  g0: $g0-color,
+  g0-dark: $g0-dark-color,
+  g1: $g1-color,
+  g1-dark: $g1-dark-color,
+  g2: $g2-color,
+  g2-dark: $g2-dark-color,
+  g3: $g3-color,
+  g3-dark: $g3-dark-color,
+  g4: $g4-color,
+  g4-dark: $g4-dark-color,
+  g5: $g5-color,
+  g5-dark: $g5-dark-color,
+  'white': $white-color,
+  'black': $black-color
+);
+
+@each $key,$val in $colors-list {
+  .bg-#{$key} {
+    background-color: #{$val} !important; /* stylelint-disable-line */
+  }
+}
+
+@each $key,$val in $colors-list {
+  .color-#{$key} {
+    color: #{$val} !important; /* stylelint-disable-line */
+  }
+}
+
+:root {
+  @each $key,$val in $colors-list {
+    --sas-color-#{$key}: #{$val};
+  }
+}

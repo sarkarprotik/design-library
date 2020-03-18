@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: de-design-library
+  namespace: default
+spec:
+  ports:
+  - name: de-design-library-port
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: de-design-library
+  type: ClusterIP

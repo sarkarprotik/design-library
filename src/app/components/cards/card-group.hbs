@@ -1,0 +1,8 @@
+{{#each cardgroup}}
+<h3 class="{{cardHeadingClass}}">{{cardHeading}}</h3>
+<div class="sas-cardgroup">
+    {{#each cards}}
+      {{>components/cards/card}}
+    {{/each}}
+</div>
+{{/each}}

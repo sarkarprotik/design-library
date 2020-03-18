@@ -1,0 +1,92 @@
+/* stylelint-disable max-nesting-depth */
+.tool-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .burger-plate {
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    padding: 16px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: $white-color;
+    border: 1px solid $white-color;
+
+    @include tablet {
+      display: none;
+    }
+
+    &.open {
+      position: fixed;
+      border: 1px solid $g0-color;
+
+      .slice {
+        &:first-child {
+          transform: rotate(45deg) translate(2px, -5px);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg) translate(2px, 3px);
+        }
+      }
+    }
+  }
+
+  .burger {
+    appearance: none;
+    width: 32px;
+    height: 38px;
+    background: none;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0 auto;
+
+    .slice {
+      height: 4px;
+      margin-bottom: 6px;
+      background: $b3-color;
+      border-radius: 2px;
+      flex: 1 1 100%;
+      transform-origin: 0 1px;
+      transition: transform .5s, opacity .5s;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .logo {
+    @include font-size(40);
+    margin-left: 60px;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  .about,
+  .contact {
+    @include font-size(14);
+  }
+
+  .about {
+    margin-left: auto;
+  }
+
+  .contact {
+    margin-left: $margin-normal * 2;
+  }
+}
+
+/* stylelint enable max-nesting-depth */

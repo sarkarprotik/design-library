@@ -1,0 +1,12 @@
+<style>{{{widgetCss}}}</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAblmo4PdyeoYVIxEpmVRUWNAo_M2VOtT0"></script>
+<script src="{{assetsDirectory}}/js/components/destination-map/build.js"></script>
+
+<flysas-destination-map></flysas-destination-map>
+{{#if countries}}
+<script>
+  document.querySelector("flysas-destination-map").countries = {{{JSONstringify countries}}};
+</script>
+{{/if}}
+
+<script src="https://www.sas.se/v2/de-planner-widget/assets/js/planner/build.min.js" async></script>

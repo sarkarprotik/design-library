@@ -1,0 +1,30 @@
+<div style="margin: 16px auto; max-width: 1152px;">
+
+  <s4s-toggle options='[{"id":"oneway","name":"Enkel resa"},{"id":"roundtrip","name":"Tur retur","selected":true}]'></s4s-toggle>
+  <form class="sas-form-flex">
+    <s4s-combobox label="Från*" market="se-sv"></s4s-combobox>
+    <s4s-combobox label="Till*" market="se-sv"></s4s-combobox>
+    <s4s-datepicker
+      label="Avresedatum*"
+      outbound-label="Avresa"
+      inbound-label="Hemresa"
+      monthNames="Jan,Feb,Mar,Apr,Maj,Juni,Juli,Aug,Sep,Okt,Nov,Dec"
+      date-delimiter="till"
+      market="se-sv">
+    </s4s-datepicker>
+    <s4s-custom-pax
+      class="focused"
+      label="Resenärer*"
+      adults-label="Vuxna"
+      children-label="Barn (2-11 år)"
+      infants-label="Spädbarn (0-23 månader)"
+      passenger-label="passagerare"
+      market="se-sv">
+    </s4s-custom-pax>
+    <button class="btn-lg">Sök</button>
+  </form>
+
+</div>
+
+{{> s4s-elements/s4s-forms/scripts }}
+

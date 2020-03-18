@@ -1,0 +1,56 @@
+.labs-profile-card {
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 30, .08);
+  display: flex;
+  align-items: center;
+
+  &.selected {
+    background-color: rgba($b0-color, .05);
+  }
+
+  > div {
+    flex-shrink: 0;
+    padding: 8px;
+  }
+
+  .info {
+    flex-grow: 1;
+
+    p {
+      color: $g3-color;
+    }
+  }
+
+  .avatar {
+    > * {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+    img {
+      border: 1px solid $g1-color;
+    }
+
+    .initials {
+      line-height: 36px;
+      color: $b0-color;
+      background-color: rgba($b0-color, .2);
+      text-align: center;
+      font-weight: 800;
+    }
+  }
+
+  abbr {
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: $b0-color;
+    background-color: rgba($b0-color, .2);
+    text-align: center;
+    font-weight: 600;
+  }
+}

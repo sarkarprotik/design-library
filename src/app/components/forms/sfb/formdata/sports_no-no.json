@@ -1,0 +1,120 @@
+{
+  "sasForm": [
+    {
+      "type": "sport",
+      "heading": "Bli sportskunde",
+      "action": "/sendMe.html",
+      "method": "post",
+      "submitLabel": "{i18n dataExcerpts.results.contactUs.send}",
+      "messages": {
+        "success": "{i18n aem.email.sport-signup.para-1}",
+        "failure": "{i18n aem.forms.generic-failed-message}"
+      },
+      "namePrefix": "sports-",
+      "fieldSets": [
+        {
+          "heading": "Idrettsklubb-, lag- eller forbundsinformasjon",
+          "fields": [
+            {
+              "name": "organisationname",
+              "label": "Idrettsklubb/lag/forbund",
+              "mandatory": true,
+              "class": "long first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.companyname.invalid}"
+            },
+            {
+              "name": "organisationnumber",
+              "label": "Organisasjonsnummer",
+              "mandatory": true,
+              "class": "short",
+              "dataValidation": "^\\d{9}$",
+              "errorMessage": "{i18n corporate.cnf.signup.vat.invalid}"
+            },
+            {
+              "name": "address",
+              "label": "Adresse",
+              "mandatory": true,
+              "class": "full first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.address.invalid}"
+            },
+            {
+              "name": "zip",
+              "label": "Postnummer",
+              "mandatory": true,
+              "class": "short first",
+              "dataValidation": "^[\\d\\s]{4,6}$",
+              "errorMessage": "{i18n corporate.cnf.signup.postal.invalid}"
+            },
+            {
+              "name": "city",
+              "label": "Sted",
+              "mandatory": true,
+              "class": "long",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.cityname.invalid}"
+            }
+          ]
+        },
+        {
+          "heading": "Avtaleansvarig",
+          "fields": [
+            {
+              "name": "firstname",
+              "label": "Fornavn",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.firstname.invalid}"
+            },
+            {
+              "name": "lastname",
+              "label": "Etternavn",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.lastname.invalid}"
+            },
+            {
+              "name": "email",
+              "label": "E-postadresse",
+              "mandatory": true,
+              "type": "email",
+              "class": "first",
+              "dataValidation": "[^@]+@[^\\.]+\\..+",
+              "errorMessage": "{i18n corporate.cnf.signup.email.invalid}"
+            },
+            {
+              "name": "tel",
+              "label": "Telefon",
+              "mandatory": true,
+              "type": "phone",
+              "dataValidation": "^[\\d\\s+-]{8,14}$",
+              "errorMessage": "{i18n corporate.cnf.signup.phone.invalid}"
+            }
+          ]
+        },
+        {
+          "checkRadio": true,
+          "fields": [
+            {
+              "id": "sportorganisation",
+              "name": "sportOrganisation",
+              "value": "sportsforbund norge",
+              "mandatory": true,
+              "class": "long first",
+              "label": "Medlem av Sportforbund Norge"
+            },
+            {
+              "name": "approve",
+              "value": "Yes",
+              "mandatory": true,
+              "class": "long first",
+              "label": "Jeg har lest og godtar vilkårene i <a href=\"https://www.sas.no/content/dam/sas/pdfs/corporate/sas-sports-agreement-en.pdf\" target=\"_blank\">avtalen</a>. Jeg har rett til å signere SAS Sport Agreement for ovennevnte forening / organisasjon."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

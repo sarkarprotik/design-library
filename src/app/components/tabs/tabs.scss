@@ -1,0 +1,51 @@
+.tabs {
+  @include font-size(14);
+
+  [role='tablist'] {
+    display: flex;
+  }
+
+  button[role='tab'] {
+    font-weight: 800;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    background-color: $b3-color;
+    color: $white-color;
+    font-size: 1em;
+    line-height: 1em;
+    transition: background-color .5s, transform .25s;
+    padding: 8px 16px;
+    margin: 0;
+
+    @include tablet {
+      padding: 8px 32px;
+    }
+
+    &[aria-selected='true'] {
+      transform: scale(1.1) translateY(-.15em);
+      background-color: $b2-color;
+    }
+
+    & > span {
+      display: block;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+
+      &:last-child {
+        @include typography(12, 16);
+        font-weight: normal;
+        margin: 0;
+      }
+    }
+  }
+
+  .tabpanel {
+    padding: 16px;
+    border: 1px solid $g0-color;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-weight: 800;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1,
+.h1 {
+  @include typography(32, 40);
+  margin-top: $margin-normal * 4;
+  margin-bottom: $margin-normal * 3;
+
+  @include tablet {
+    @include typography(40, 48);
+    margin-top: $margin-normal * 5;
+    margin-bottom: $margin-normal * 4;
+  }
+
+  &.sm {
+    @include typography(32, 40);
+    margin-top: $margin-normal * 4;
+    margin-bottom: $margin-normal * 3;
+  }
+
+  &.lg {
+    @include typography(40, 48);
+    margin-top: $margin-normal * 5;
+    margin-bottom: $margin-normal * 4;
+  }
+}
+
+h2,
+.h2 {
+  @include typography(24, 28);
+  margin-top: $margin-normal * 3;
+  margin-bottom: $margin-normal * 2;
+}
+
+h3,
+.h3 {
+  @include typography(18, 24);
+  margin-top: $margin-normal * 3;
+  margin-bottom: $margin-normal * 2;
+}
+
+h4,
+.h4 {
+  @include typography(14, 20);
+  margin-top: $margin-normal * 2;
+  margin-bottom: $margin-normal;
+}
+
+h5,
+.h5 {
+  @include typography(12, 16);
+  margin-top: $margin-normal * 2;
+  margin-bottom: $margin-normal;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+.p3 {
+  @include typography(24, 36);
+}
+
+.p2 {
+  @include typography(16, 24);
+}
+
+.p1 {
+  @include typography(14, 20);
+}
+
+.p1-sm {
+  @include typography(12, 16);
+}
+
+.p1-xs {
+  @include typography(10, 12);
+}
+
+p {
+  @include typography(14, 20);
+  margin: $margin-normal 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.teaser-text {
+    @extend .p3;
+  }
+
+  &.preamble-text {
+    @extend .p2;
+  }
+
+  article & {
+    font-weight: 300;
+  }
+}

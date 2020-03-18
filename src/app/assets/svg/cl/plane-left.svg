@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>plane-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,10.2941375 L18.1341542,11.9 L11.2804922,11.9 L12.4227693,17 L11.2804922,17 L7.853662,11.9 L3.284554,11.9 C1,11.9 1,10.625 1,10.625 C1,9.35 3.284554,9.35 3.284554,9.35 L7.853662,9.35 L11.2804922,4.25 L12.4227693,4.25 L11.2804922,9.35 L16.9918772,9.35 L18.1341542,6.8 L19,6.8 L19,10.2941375 Z" id="path-1"></path>
+    </defs>
+    <g id="plane-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="path" fill="#000099" xlink:href="#path-1"></use>
+    </g>
+</svg>

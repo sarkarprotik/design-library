@@ -1,0 +1,40 @@
+<nav class="sas-main-menu">
+  {{> components/sas-hamburger/sas-hamburger}}
+  <ul>
+    {{#each items}}
+    <li{{#if cssClass}} class="{{cssClass}}"{{/if}}>
+      <a {{#if categories}}aria-haspopup="true" aria-expanded="false"{{/if}} href="{{href}}">{{name}} {{#if categories}}{{> partials/icons/svgInternal name="in--arrow-up"}}{{/if}}</a>
+      {{#if categories}}
+      <ul>
+        {{#each categories}}
+        <li>
+          <a href="{{href}}" aria-expanded="true">{{name}}</a>
+          <ul>
+            {{#each items}}
+            <li>
+              <a href="{{href}}">{{name}}</a>
+            </li>
+            {{/each}}
+           </ul>
+        </li>
+        {{/each}}
+        {{#if aside}}
+        <li class="aside">
+          <a href="#" aria-expanded="true">{{i18n @root.market "aem.topnav.extralinks.category"}}</a>
+          <ul>
+            {{#each aside}}
+            <li>
+              <a href="{{href}}">{{name}}</a>
+            </li>
+            {{/each}}
+           </ul>
+        </li>
+        {{/if}}
+     </ul>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  {{> components/sas-search/sas-search}}
+</nav>
+

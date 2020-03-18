@@ -1,0 +1,35 @@
+const gulp = require("gulp")
+const del = require("del")
+const gulpJs = require("./gulp/gulp-js")
+const gulpStyles = require("./gulp/gulp-styles")
+const gulpIcons = require("./gulp/gulp-icons")
+const gulpVendor = require("./gulp/gulp-vendor")
+const gulpFonts = require("./gulp/gulp-fonts")
+const gulpImages = require("./gulp/gulp-images")
+const gulpRemote = require("./gulp/gulp-remote")
+const gulpWebserver = require("./gulp/gulp-webserver")
+const gulpStylelint = require("./gulp/gulp-stylelint")
+const gulpWebcomponents = require("./gulp/gulp-webcomponents")
+const gulpData = require("./gulp/gulp-data")
+
+gulp.task("clean:build", del.bind(null, ["build", "dist"]))
+
+gulp.task("js", gulpJs.series())
+gulp.task("styles", gulpStyles.series())
+gulp.task("icons", gulpIcons.series())
+gulp.task("vendor", gulpVendor.series())
+gulp.task("fonts", gulpFonts.series())
+gulp.task("images", gulpImages.series())
+gulp.task("remote", gulpRemote.series())
+gulp.task("webserver", gulpWebserver.series())
+gulp.task("sass", gulpStylelint.series())
+gulp.task("webcomponents", gulpWebcomponents.series())
+gulp.task("data", gulpData.series())
+gulp.task(
+  "build",
+  gulp.series("clean:build", "js", "styles", "webcomponents", "icons", "vendor", "fonts", "images", "data")
+)
+
+gulp.task("start", resolve => {
+  gulp.series("build", "webserver")(resolve)
+})

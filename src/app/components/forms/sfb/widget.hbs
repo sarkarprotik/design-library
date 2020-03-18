@@ -1,0 +1,10 @@
+<div class="flysas-widget flysas-forms-widget">
+  {{#if widgetCss}}<style>{{{widgetCss}}}</style>{{/if}}
+  <div class="form-loader">
+    {{> components/forms/sfb/loader }}
+  </div>
+  <div class="form-data">
+    {{> components/forms/sas-form }}
+  </div>
+  {{#if widgetJs}}<script>{{{widgetJs}}}</script>{{/if}}
+</div>

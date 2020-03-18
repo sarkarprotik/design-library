@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: de-design-library
+  namespace: default
+spec:
+  template:
+    metadata:
+      labels:
+        app: de-design-library
+    spec:
+      containers:
+      - name: de-design-library
+        imagePullPolicy: Always
+        image: "IMAGE_TAG"
+        env:
+        - name: SCOPE
+          value: prod
+        - name: NODE_ENV
+          value: prod
+        ports:
+        - name: http-port
+          containerPort: 3000
+        readinessProbe:
+          httpGet:
+            path: /readiness
+            port: http-port
+          initialDelaySeconds: 3
+          periodSeconds: 3

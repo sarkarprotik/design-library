@@ -1,0 +1,181 @@
+.sas-main-header {
+  @include font-size(16);
+  background-color: $b3-color;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 11;
+  transition: background-color .3s, color .3s;
+
+  &::after {
+    content: '';
+    background: $white-color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    transition: left .4s ease-in-out;
+    z-index: -1;
+  }
+
+  &.menu-expanded {
+    color: $g5-color;
+    background-color: $white-color;
+
+    &::after {
+      left: 0;
+    }
+
+    .sas-logo {
+      color: $b3-color;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .sas-logo-link {
+    &:focus {
+      outline: none;
+
+      .sas-logo {
+        margin-top: $margin-normal + 2px;
+        border-bottom: 2px solid $white-color;
+      }
+    }
+  }
+
+  .sas-logo {
+    box-sizing: content-box;
+    width: 72px;
+    height: 27px;
+    padding: $margin-normal;
+    margin: $margin-normal;
+    align-self: center;
+  }
+
+  .sas-container {
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $mainnav-height-mobile;
+    width: 100%;
+    max-width: $max-page-width;
+    margin: 0 auto;
+
+    > a {
+      color: currentColor;
+      text-decoration: none;
+      align-self: stretch;
+      display: flex;
+      align-items: stretch;
+      padding: 2px;
+    }
+
+    .btn-acknowledge {
+      font-weight: 800; //this is default
+      display: block;
+      margin: $margin-normal * 2 auto 0;
+      font-family: inherit;
+      font-size: inherit;
+      min-height: 32px;
+      color: $white-color;
+      border: 2px solid $white-color;
+      background: transparent;
+      appearance: none;
+
+      &:hover {
+        border: 2px solid $white-color;
+      }
+    }
+
+    .btn-login {
+      @extend %focus-on-blue;
+      font-weight: normal;
+      font-size: inherit;
+      padding: 16px;
+      flex-grow: 1;
+      text-align: right;
+      align-self: stretch;
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      text-transform: none;
+      background: none;
+      font-family: inherit;
+      color: $white-color;
+      border: 0;
+      min-width: auto;
+      appearance: none;
+
+      @include desktop {
+        flex-grow: 0;
+      }
+    }
+
+    .points {
+      margin-right: 16px;
+    }
+
+    .initials {
+      font-weight: 900;
+      padding: 8px;
+      border-radius: 50%;
+      background: $b0-color;
+
+      &.profile-b {
+        background: #002cc5;
+      }
+
+      &.profile-s {
+        background: $g1-color;
+        color: $text-color;
+      }
+
+      &.profile-g {
+        background: #caa977;
+      }
+
+      &.profile-d {
+        background: #d8d8d8;
+        color: $text-color;
+      }
+
+      &.profile-p {
+        background: #272623;
+      }
+    }
+  }
+
+  @include desktop {
+    &::before {
+      content: '';
+      background: rgba($b5-color, .4);
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    &.expanded {
+      &::before {
+        display: block;
+      }
+    }
+
+    .sas-container {
+      height: $mainnav-height-desktop;
+
+      > a {
+        flex-grow: 0;
+      }
+    }
+  }
+}

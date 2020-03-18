@@ -1,0 +1,120 @@
+{
+  "sasForm": [
+    {
+      "type": "sport",
+      "heading": "Sign up form for SAS Sport",
+      "action": "/sendMe.html",
+      "method": "post",
+      "submitLabel": "{i18n dataExcerpts.results.contactUs.send}",
+      "messages": {
+        "success": "{i18n aem.email.sport-signup.para-1}",
+        "failure": "{i18n aem.forms.generic-failed-message}"
+      },
+      "namePrefix": "sports-",
+      "fieldSets": [
+        {
+          "heading": "Company Details",
+          "fields": [
+            {
+              "name": "organisationname",
+              "label": "Company Name",
+              "mandatory": true,
+              "class": "long first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.companyname.invalid}"
+            },
+            {
+              "name": "organisationnumber",
+              "label": "VAT/Org. Number",
+              "mandatory": true,
+              "class": "short",
+              "dataValidation": "^\\d{7,12}$",
+              "errorMessage": "{i18n corporate.cnf.signup.vat.invalid}"
+            },
+            {
+              "name": "address",
+              "label": "Address",
+              "mandatory": true,
+              "class": "full first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.address.invalid}"
+            },
+            {
+              "name": "zip",
+              "label": "Postal/zip code",
+              "mandatory": true,
+              "class": "short first",
+              "dataValidation": "^[\\d\\s]{4,6}$",
+              "errorMessage": "{i18n corporate.cnf.signup.postal.invalid}"
+            },
+            {
+              "name": "city",
+              "label": "City",
+              "mandatory": true,
+              "class": "long",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.cityname.invalid}"
+            }
+          ]
+        },
+        {
+          "heading": "Company Contact",
+          "fields": [
+            {
+              "name": "firstname",
+              "label": "First Name",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.firstname.invalid}"
+            },
+            {
+              "name": "lastname",
+              "label": "Last Name",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.lastname.invalid}"
+            },
+            {
+              "name": "email",
+              "label": "Email Address",
+              "mandatory": true,
+              "type": "email",
+              "class": "first",
+              "dataValidation": "[^@]+@[^\\.]+\\..+",
+              "errorMessage": "{i18n corporate.cnf.signup.email.invalid}"
+            },
+            {
+              "name": "tel",
+              "label": "Phone Number",
+              "mandatory": true,
+              "type": "phone",
+              "dataValidation": "^[\\d\\s+-]{8,14}$",
+              "errorMessage": "{i18n corporate.cnf.signup.phone.invalid}"
+            }
+          ]
+        },
+        {
+          "checkRadio": true,
+          "fields": [
+            {
+              "id": "sportorganisation",
+              "name": "sportOrganisation",
+              "value": "Sveriges Riksidrottsförbund",
+              "mandatory": true,
+              "class": "long first",
+              "label": "Member of Sveriges Riksidrottsförbund"
+            },
+            {
+              "name": "approve",
+              "value": "Yes",
+              "mandatory": true,
+              "class": "long first",
+              "label": "I have read and approved <a href=\"https://www.flysas.com/content/dam/sas/pdfs/corporate/sas-sports-agreement-en.pdf\" target=\"_blank\">terms and conditions</a>.<br>I have the rights to sign SAS Sports Agreement for above organisation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

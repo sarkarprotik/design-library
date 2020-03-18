@@ -1,0 +1,31 @@
+.spinning-numbers {
+  @include font-size(32);
+  display: flex;
+
+  .number-plate {
+    padding: 8px 4px;
+    margin: 0 8px 0 0;
+    background: #009;
+    color: $white-color;
+    border-radius: $border-radius-normal;
+    display: flex;
+    text-align: center;
+  }
+
+  .number-box {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    line-height: 1em;
+    display: inline-block;
+
+    > * {
+      position: relative;
+    }
+  }
+
+  .numbers {
+    top: 0;
+    transition: top .5s;
+  }
+}

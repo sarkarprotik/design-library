@@ -1,0 +1,77 @@
+<script src="{{assetsDirectory}}/js/components/forms/test/build.js"></script>
+
+<flysas-login
+  buttonLabel="Login!"
+  requiredLabel="* required field"
+></flysas-login>
+{{! <div> }}
+{{! <form class="sas-form-grid">
+    <flysas-input label="First name" name="firstname" type="text" message="Invalid firstname" validation="^[\D]+$">
+    </flysas-input>
+
+    <flysas-input label="Last name" name="lastname" type="text" message="Invalid lastname" validation="^[\D]+$">
+    </flysas-input>
+
+    <flysas-input label="Street address" name="address" type="text" message="Invalid address" validation="^[\D]+$">
+    </flysas-input>
+
+    <flysas-input label="E-mail" name="email" type="email" message="Invalid email" validation="^[\D]+$"></flysas-input>
+
+    <flysas-input label="Zip code" name="zip" type="number" message="Invalid zip code" validation="^[\d]+$"
+      class="short first"></flysas-input>
+
+    <flysas-input label="City" name="city" type="text" message="Invalid city" validation="^[\D]+$" class="long">
+    </flysas-input>
+
+    <flysas-input label="Phone" name="phone" type="tel" message="Invalid phone" validation="^[\d]+$"></flysas-input>
+
+    <flysas-input label="Country" name="country" type="select" message="Invalid country" validation="^[\D]+$"
+      class="first full"></flysas-input>
+
+    <flysas-fieldset legend="Sports equipment" name="equipment" id="equipment" type="checkbox"></flysas-fieldset>
+
+    <flysas-fieldset legend="Are you sure?" name="choice" id="choice" type="radio"></flysas-fieldset>
+  </form>
+
+  <script>
+    document.querySelector("[name=country]").options = {
+      items: [{
+        value: "",
+        text: ""
+      }, {
+        value: "se",
+        text: "Sweden",
+        selected: true
+      }, {
+        value: "no",
+        text: "Norway"
+      }]
+    };
+
+    document.querySelector("[name=equipment]").options = {
+      items: [{
+        value: "golf",
+        text: "Golf bag"
+      }, {
+        value: "cycle",
+        text: "Bicycle"
+      }, {
+        value: "ski",
+        text: "Skiis"
+      }]
+    };
+
+    document.querySelector("[name=choice]").options = {
+      items: [{
+        value: "yes",
+        text: "Yes"
+      }, {
+        value: "no",
+        text: "No"
+      }, {
+        value: "maybe",
+        text: "Maybe"
+      }]
+    };
+  </script> }}
+{{! </div> }}

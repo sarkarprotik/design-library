@@ -1,0 +1,1 @@
+!function(e,s,t){class n extends S4SBase{constructor(){super()}connectedCallback(){this.init(t.templates.cep),this.bindEvents()}bindEvents(){this.elements.form.addEventListener("submit",e=>this.search(e))}search(e){e.preventDefault(),console.log(this.elements.from.json)}}e.customElements.define("s4s-cep",n)}(window,document,window.s4s);

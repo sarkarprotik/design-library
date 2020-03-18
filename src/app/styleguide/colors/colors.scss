@@ -1,0 +1,23 @@
+@import 'primary';
+@import 'support';
+@import 'accent';
+
+$white-color: #fff;
+$black-color: #000;
+
+$text-color: $g5-color;
+
+$brand-color: $b3-color;
+$brand-80-color: $b3-color;
+$dark-gray-color: $text-color;
+
+$page-background-color: $white-color;
+$text-color: $dark-gray-color;
+$link-color: $b1-dark-color;
+
+$button-color: $b1-color;
+$button-hover-color: $b1-dark-color;
+$button-active-color: $b0-color;
+$button-disabled-color: $g4-color;
+
+$overlay-color: rgba($b5-color, .8);

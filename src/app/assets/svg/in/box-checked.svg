@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>box-checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="box-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,0 C22.209139,0 24,1.790861 24,4 L24,20 C24,22.209139 22.209139,24 20,24 L4,24 C1.790861,24 0,22.209139 0,20 L0,4 C0,1.790861 1.790861,0 4,0 L20,0 Z M17,7 L10,14 L7,11 L5,13 L10,18 L19,9 L17,7 Z" id="Shape" fill="#0033CC"></path>
+    </g>
+</svg>

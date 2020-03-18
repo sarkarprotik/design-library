@@ -1,0 +1,208 @@
+<h2 class="color-b3">Cards</h2>
+
+<h3 class="color-b3">Hero</h3>
+{{>components/cards/card 
+  imageClass='sas-image-fill' 
+  imageSource='/content/dam/sas/images/destinations/nordics/got_SB19526_1600x1000.jpg.transform/hero-large/img.jpg' 
+  notLazy=true 
+  bannerType='banner-hero' 
+  heading='Våra erbjudanden just nu'
+  subHeading='Bra priser till utvalda städer i Europa'
+  buttonLabel='Boka senast 28/1'
+  bannerLink='http://www.sas.se'
+}}
+
+<pre>
+  <code class="language-html">
+    {{>components/cards/card 
+      imageClass='sas-image-fill' 
+      imageSource='/content/dam/sas/images/destinations/nordics/got_SB19526_1600x1000.jpg.transform/hero-large/img.jpg' 
+      notLazy=true 
+      bannerType='banner-hero' 
+      heading='Våra erbjudanden just nu'
+      subHeading='Bra priser till utvalda städer i Europa'
+      buttonLabel='Boka senast 28/1'
+      bannerLink='http://www.sas.se'
+    }}
+  </code>
+</pre>
+{{#each cardgroup}}
+<h3 class="color-b3">{{cardHeading}}</h3>
+<div class="sas-cardgroup">
+    {{#each cards}}
+      {{>components/cards/card}}
+    {{/each}}
+</div>
+<pre>
+  <code class="language-html">
+    <h3>{{cardHeading}}</h3>
+    <div class="sas-cardgroup">
+        {{#each cards}}
+          {{#lt @index 1}}
+            {{>components/cards/card}}
+          {{/lt}}
+        {{/each}}
+    </div>
+  </code>
+</pre>
+{{/each}}
+<h3 class="color-b3">Teaser card</h3>
+
+{{>components/cards/card 
+  imageSource='/content/dam/sas/images/customer-journey/airport-DSC3387.jpg'
+  notLazy=true 
+  bannerType='teaser-card' 
+  heading='Behöver du mer bagage?'
+  text='<p>Om du behöver checka in fler väskor kan du köpa extra bagage i förskott.</p>'
+  buttonLabel='Köpa extra bagage'
+  bannerLink='http://www.sas.se'
+}}
+<pre>
+  <code class="language-html">
+    {{>components/cards/card 
+      imageSource='/content/dam/sas/images/customer-journey/airport-DSC3387.jpg'
+      notLazy=true 
+      bannerType='teaser-card' 
+      heading='Behöver du mer bagage?'
+      text='<p>Om du behöver checka in fler väskor kan du köpa extra bagage i förskott.</p>'
+      buttonLabel='Köpa extra bagage'
+      bannerLink='http://www.sas.se'
+    }}
+  </code>
+</pre>
+
+{{!--
+
+<h3 class="color-b3">WIP</h3>
+
+<div class="flexbox-container">
+  <ul class="flexbox">
+    <li>
+      <div class="card card-banner card-banner-media card-banner-multi" style="background-image:url(/v2/de-design-library/assets/images/card-alps.jpg)">
+        <div class="content"></div>
+        <div class="destinations-prices">
+          <table class="color-bg-b3">
+            <thead class="color-b4">
+              <tr>
+                <th scope="col">Malmö</th><th scope="col">Enkel från</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Palma de Mallorca</td><td>890:-</td>
+              </tr>
+              <tr>
+                <td>Malaga</td><td>769:-</td>
+              </tr>
+              <tr>
+                <td>Sardinien</td><td>655:-</td>
+              </tr>
+              <tr>
+                <td>Rom</td><td>359:-</td>
+              </tr>
+              <tr>
+                <td>Berlin</td><td>870:-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card card-banner card-banner-media card-banner-multi" style="background-image:url(/v2/de-design-library/assets/images/card-rocks.jpg)">
+        <div class="content"></div>
+        <div class="destinations-prices">
+          <table class="color-bg-b3">
+            <thead class="color-b4">
+              <tr>
+                <th>Malmö</th><th>Enkel från</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Palma de Mallorca</td><td>890:-</td>
+              </tr>
+              <tr>
+                <td>Malaga</td><td>769:-</td>
+              </tr>
+              <tr>
+                <td>Sardinien</td><td>655:-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card card-banner card-banner-media card-banner-multi" style="background-image:url(/v2/de-design-library/assets/images/card-woman.jpg)">
+        <div class="content"></div>
+        <div class="destinations-prices">
+          <table class="color-bg-b3">
+            <thead class="color-b4">
+              <tr>
+                <th>Malmö</th><th>Enkel från</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Palma de Mallorca</td><td>890:-</td>
+              </tr>
+              <tr>
+                <td>Malaga</td><td>769:-</td>
+              </tr>
+              <tr>
+                <td>Sardinien</td><td>655:-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<pre>
+  <code class="language-html">
+    <div class="card card-banner card-banner-media" style="background-image:url(/v2/de-design-library/assets/images/card-alps.jpg)">
+      <div class="content">
+        <table class="bg-b3 color-white">
+          <thead class="bg-b4">
+            <tr>
+              <th>Göteborg</th><th>Enkel från</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Palma de Mallorca</td><td>890:-</td>
+            </tr>
+            <tr>
+              <td>Malaga</td><td>769:-</td>
+            </tr>
+            <tr>
+              <td>Sardinien</td><td>655:-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </code>
+</pre>
+
+<h3 class="color-b3">Default</h3>
+
+<div class="card">
+  <div class="content">
+    <h3>Breakfast, 79 SEK</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="media">
+    <img src="/v2/de-design-library/assets/images/card-alps.jpg">
+  </div>
+  <div class="content">
+    <h3>Breakfast, 79 SEK</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+--}}

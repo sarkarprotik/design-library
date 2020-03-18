@@ -1,0 +1,4 @@
+<div class="check-radio{{#if class}} {{class}}{{/if}}{{#or mandatory dataValidation}} mandatory{{/or}}">
+  <input type="{{#eq type "radio"}}radio{{else}}checkbox{{/eq}}" name="{{name}}" id="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}-{{dashcase value}}{{/if}}" value="{{value}}">
+  <label for="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}-{{dashcase value}}{{/if}}">{{{label}}}</label>
+</div>

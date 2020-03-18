@@ -1,0 +1,56 @@
+<h2 class="color-b3">Colors</h2>
+<h3 class="color-b3">Usage</h3>
+<p>To use colors in the code we have created class names for the colors. If you want a background you use "bg-" and the color code (eg bg-b0 or bg-r-dark). If you need a text in certain color you use "color-" instead (color-b3, color-g-dark).</p>
+
+<h3 class="color-b3">Primary</h3>
+<div class="flexbox color-white">
+
+  {{#each primary}}
+  <div class="item item-sm item-{{name}}">
+    <div class="color-normal bg-{{name}}">
+      <span>{{name}}</span><span>{{hex}}</span>
+    </div>
+    <div class="color-dark bg-{{name}}-dark">
+      <span>Dark</span><span>{{dark.hex}}</span>
+    </div>
+    {{#if light.hex}}
+    <div class="color-dark color-b1 bg-{{name}}-light">
+      <span>Light</span><span>{{light.hex}}</span>
+    </div>
+    {{/if}}
+  </div>
+  {{/each}}
+
+</div>
+
+<h3 class="color-b3">Support</h3>
+<div class="flexbox color-white">
+
+  {{#each support}}
+  <div class="item item-sm item-{{name}}">
+    <div class="color-normal bg-{{name}}">
+      <span>{{name}}</span><span>{{hex}}</span>
+    </div>
+    <div class="color-dark bg-{{name}}-dark">
+      <span>Dark</span><span>{{dark.hex}}</span>
+    </div>
+  </div>
+  {{/each}}
+
+</div>
+
+<h3 class="color-b3">Accent</h3>
+<div class="flexbox color-white">
+
+  {{#each accent}}
+  <div class="item item-sm item-{{name}}">
+    <div class="color-normal bg-{{name}}">
+      <span>{{name}}</span><span>{{hex}}</span>
+    </div>
+    <div class="color-dark bg-{{name}}-dark">
+      <span>Dark</span><span>{{dark.hex}}</span>
+    </div>
+  </div>
+  {{/each}}
+
+</div>

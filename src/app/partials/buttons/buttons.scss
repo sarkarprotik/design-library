@@ -1,0 +1,122 @@
+button,
+.btn {
+  @include typography(16, 24);
+  font-family: inherit;
+  font-weight: 800;
+  text-transform: uppercase;
+  appearance: none;
+  border: 0;
+  background-color: $button-color;
+  color: $white-color;
+  border-radius: $border-radius-normal;
+  transition: background-color .25s ease-in-out, transform .15s ease, border-color .25s ease-in-out;
+  min-height: 48px;
+  padding: $margin-normal $margin-normal * 4;
+  cursor: pointer;
+  margin: 0 0 $margin-normal * 2;
+
+  &.block-element {
+    width: 100%;
+  }
+
+  &:hover,
+  &.hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+
+  &:active,
+  &.active {
+    background-color: $button-active-color;
+  }
+
+  &[disabled] {
+    background-color: $button-disabled-color;
+  }
+}
+
+.btn-md {
+  @include typography(14, 20);
+  min-height: 40px;
+}
+
+.btn-lg {
+  @include typography(14, 20);
+  min-height: 62px;
+}
+
+.btn-icon {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  text-indent: -1000px;
+  overflow: hidden;
+  border: 1px solid transparent;
+
+  &:hover,
+  &.hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $g1-color;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $b1-color;
+  border: 2px solid $b1-color;
+
+  &-negative {
+    background-color: transparent;
+    color: $white-color;
+    border: 2px solid $white-color;
+
+    &:hover,
+    &.hover,
+    &:focus {
+      background-color: transparent;
+      color: $white-color;
+      border: 2px solid $white-color;
+    }
+
+    &:active,
+    &.active {
+      background-color: transparent;
+      color: $white-color;
+      border: 2px solid $white-color;
+    }
+
+    &[disabled],
+    &.disabled {
+      background-color: transparent;
+      color: $white-color;
+      border: 2px solid $white-color;
+    }
+  }
+
+  &:hover,
+  &.hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background-color: transparent;
+  }
+
+  &[disabled],
+  &.disabled {
+    background-color: transparent;
+  }
+}
+
+.btn-link {
+  color: $link-color;
+  text-decoration: underline;
+
+  &.light-on-dark {
+    color: $white-color;
+  }
+}

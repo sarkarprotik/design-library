@@ -1,0 +1,28 @@
+@import 'styleguide/colors/colors';
+
+$hostname: '';
+$assets-url: '#{$hostname}/v2/de-design-library/assets';
+$base-font-size: 16; //default in most browsers
+$base-grid-size: 4px;
+
+$margin-normal: $base-grid-size * 2;
+$border-radius-normal: $base-grid-size;
+$border-radius-input: $border-radius-normal;
+$card-shadow: 0 2px 4px 0 $g1-color;
+$max-page-width: 1152px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$modal-background: rgba(0, 0, 51, .8);
+
+$mainnav-height-desktop: 74px;
+$mainnav-height-mobile: 64px;
+
+$font-family-scandinavian: scandinavian, 'Open Sans', arial, sans-serif;
+$font-family-open-sans: 'Open Sans', scandinavian, arial, sans-serif;
+
+:root {
+  --sas-margin-normal: $margin-normal;
+  --sas-margin-double: $margin-normal * 2;
+  --sas-margin-quadruple: $margin-normal * 4;
+  --sas-font-family: $font-family-scandinavian;
+}

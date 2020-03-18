@@ -1,0 +1,27 @@
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: ($size / $base-font-size) + rem;
+}
+
+@mixin typography($size, $lineheight) {
+  @include font-size($size);
+  line-height: ($lineheight / $size);
+}
+
+%focus-on-blue {
+  &:focus {
+    outline: 2px solid $white-color;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'scandinavian';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url('#{$assets-url}/fonts/ScandinavianNew-Regular.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/ScandinavianNew-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'scandinavian';
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url('#{$assets-url}/fonts/ScandinavianNewBook-Regular.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/ScandinavianNewBook-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'scandinavian';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url('#{$assets-url}/fonts/ScandinavianNew-Bold.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/ScandinavianNew-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'scandinavian';
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+  src:
+    url('#{$assets-url}/fonts/ScandinavianNew-Black.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/ScandinavianNew-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    url('#{$assets-url}/fonts/opensans-regular.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/opensans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    url('#{$assets-url}/fonts/opensans-bold.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/opensans-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    url('#{$assets-url}/fonts/opensans-extrabold.woff2') format('woff2'),
+    url('#{$assets-url}/fonts/opensans-extrabold.woff') format('woff');
+}
+
+.font-regular {
+  font-weight: normal;
+}
+
+.font-regular-book {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-black {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.open-sans {
+  font-family: $font-family-open-sans;
+}

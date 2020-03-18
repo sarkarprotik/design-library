@@ -1,0 +1,29 @@
+{{#each sasForm}}
+  {{#if messages}}
+  <div class="success" hidden>{{{messages.success}}}</div>
+  <div class="failure" hidden>{{{messages.failure}}}</div>
+  {{/if}}
+  <h2>{{heading}}</h2>
+  <form action="{{action}}" method="{{#if method}}{{method}}{{else}}post{{/if}}" class="sas-form-grid"{{#if type}} data-type="{{type}}"{{/if}}>
+  {{#each fieldSets}}
+    {{#unless checkRadio}}
+      <fieldset>
+        {{#if heading}}<legend>{{heading}}</legend>{{/if}}
+        {{#each fields}}
+          {{>components/forms/textinput namePrefix=../../namePrefix}}
+        {{/each}}
+      </fieldset>
+    {{else}}
+      <fieldset>
+        {{#if heading}}<legend>{{heading}}</legend>{{/if}}
+        {{#each fields}}
+          {{>components/forms/checkradio namePrefix=../../namePrefix}}
+        {{/each}}
+      </fieldset>
+    {{/unless}}
+  {{/each}}
+    <fieldset>
+      <button type="submit">{{submitLabel}}</button>
+    </fieldset>
+  </form>
+{{/each}}

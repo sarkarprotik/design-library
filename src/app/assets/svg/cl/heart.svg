@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.577757,10.733995 C19.474081,8.8567825 19.474081,5.7851275 17.577757,3.907915 C15.6823337,2.030695 12.5808947,2.030695 10.6854707,3.907915 L9.9960625,4.5907 L9.31385425,3.914155 C7.41843025,2.036935 4.31699125,2.036935 2.421568,3.914155 C0.526144,5.7913675 0.526144,8.8639075 2.421568,10.7411275 L5.557207,13.8466525 L6.55621975,14.83696 L10.0032625,18.25 L14.448418,13.8466525 L17.577757,10.733995 Z" id="path-1"></path>
+    </defs>
+    <g id="heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="path" fill="#000099" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: normal;
+  font-style: normal;
+  text-align: initial;
+  vertical-align: baseline;
+  appearance: none;
+  background: transparent;
+  list-style: none;
+  text-transform: initial;
+  cursor: initial;
+  height: auto;
+  color: $text-color;
+  min-height: 0;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+:focus {
+  outline: 2px solid $b1-dark-color;
+  outline-offset: 2px;
+}
+
+:active {
+  outline: none;
+}
+
+html {
+  text-size-adjust: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+body {
+  @include font-size($base-font-size);
+  font-family: $font-family-scandinavian;
+  background: $page-background-color;
+  color: $text-color;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+.sas-container {
+  width: 100vw;
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+
+// misc
+.hidden {
+  display: none !important; /* stylelint-disable-line */
+}
+
+.sr-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a.sr-hidden:focus {
+  position: relative;
+  clip: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-right {
+  text-align: right !important; /* stylelint-disable-line */
+}
+
+.block-element {
+  display: block !important; /* stylelint-disable-line */
+}
+
+.info-block {
+  padding: $margin-normal * 2;
+  background: $g0-color;
+
+  .s4s-login & {
+    margin: $margin-normal * 2 -#{$margin-normal * 2};
+  }
+}

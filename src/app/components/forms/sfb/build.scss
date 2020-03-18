@@ -1,0 +1,20 @@
+.flysas-sfb-form {
+  float: none;
+  clear: both;
+  max-width: 1120px;
+  margin: 32px auto;
+}
+
+.flysas-forms-widget {
+  @import '../../../variables';
+  @import '../../../mixins';
+  @import '../../../partials/buttons/buttons';
+  @import '../forms';
+  @import '../sas-form-grid';
+  @import 'sfb-form';
+
+  button {
+    font-family: 'scandinavianblack', 'opensansextrabold', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+}

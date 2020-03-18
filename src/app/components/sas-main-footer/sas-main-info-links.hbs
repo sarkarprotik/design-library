@@ -1,0 +1,19 @@
+<section class="sas-main-info-links">
+  <div class="sas-container">
+    <ul class="legal">
+      {{#each miscLinks}}
+          <li id="{{id}}">
+            <a href="{{href}}">{{text}}</a>
+          </li>
+      {{/each}}
+    </ul>
+    <ul class="social">
+      <li class="text">{{i18n @root.market "social.followus"}}</li>
+      {{#each socialLinks}}
+        <li>
+          <a href="{{href}}">{{> partials/icons/svgInternal name=(append 'cl--' id) text=text}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

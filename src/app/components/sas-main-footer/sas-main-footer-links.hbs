@@ -1,0 +1,22 @@
+<nav class="sas-main-footer-links" aria-label="sidfotsnavigering">
+  <ul>
+    {{#each items}}
+    <li>
+      <h2 class="h3">
+        <a href="{{href}}">
+          {{name}}
+        </a>
+      </h2>
+      <ul>
+        {{#each links}}
+        <li>
+          <a href="{{href}}">
+            {{name}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
+</nav>

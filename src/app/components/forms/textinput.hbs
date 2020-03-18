@@ -1,0 +1,21 @@
+<div class="sas-input{{#if class}} {{class}}{{/if}}{{#if type}} {{type}}{{/if}}{{#or mandatory dataValidation}} mandatory{{/or}}{{#or selected optionLabel}} focused{{/or}}" data-name="{{name}}">
+  <label class="form-field" for="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}{{/if}}">
+    {{#eq type "textarea"}}
+      <span class="label">{{label}}</span>
+      <textarea name="{{name}}" id="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}{{/if}}"{{#if dataValidation}} data-validation="{{dataValidation}}"{{/if}}{{#if dataBehavior}} data-behavior="{{dataBehavior}}"{{/if}}{{#or mandatory dataValidation}} required{{/or}}>{{#if prefilled}}{{prefilled}}{{/if}}</textarea>
+    {{else}}
+      <span class="label">{{label}}</span>
+      {{#eq type "select"}}
+        <select name="{{name}}" id="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}{{/if}}"{{#if dataValidation}} data-validation="{{dataValidation}}"{{/if}}{{#if dataBehavior}} data-behavior="{{dataBehavior}}"{{/if}}{{#if prefilled}} val="{{prefilled}}"{{/if}}{{#or mandatory dataValidation}} required{{/or}}>
+          <option value="">{{optionLabel}}</option>
+        {{#each options}}
+          <option value="{{value}}"{{#if selected}} selected="selected"{{/if}}>{{name}}</option>
+        {{/each}}
+        </select>
+      {{else}}
+        <input type="{{#if type}}{{type}}{{else}}text{{/if}}" name="{{name}}" id="{{namePrefix}}{{#if id}}{{id}}{{else}}{{dashcase name}}{{/if}}"{{#if dataValidation}} data-validation="{{dataValidation}}"{{/if}}{{#if dataBehavior}} data-behavior="{{dataBehavior}}"{{/if}}{{#if prefilled}} val="{{prefilled}}"{{/if}}{{#or mandatory dataValidation}} required{{/or}}>
+      {{/eq}}
+    {{/eq}}
+  </label>
+  {{#if errorMessage}}<span class="message">{{errorMessage}}</span>{{/if}}
+</div>

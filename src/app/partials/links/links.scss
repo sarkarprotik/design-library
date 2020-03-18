@@ -1,0 +1,7 @@
+a {
+  color: $link-color;
+
+  &.light-on-dark {
+    color: $white-color;
+  }
+}

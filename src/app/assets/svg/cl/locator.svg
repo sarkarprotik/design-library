@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>locator</title>
+    <desc>Created with Sketch.</desc>
+    <g id="locator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,18 L15,20 L5,20 L5,18 L15,18 Z M10.0003571,0 C12.7624048,0 15.0003571,2.3506875 15.0003571,5.24967187 C15.0003571,8.75011002 10.0003571,15.0082218 10.0003571,15.0082218 L9.51674312,14.3780247 C8.26219146,12.7032407 5.00035714,8.07694884 5.00035714,5.24967187 C5.00035714,2.3506875 7.23830951,0 10.0003571,0 Z M10,3 C8.896,3 8,3.896 8,5 C8,6.104 8.896,7 10,7 C11.104,7 12,6.104 12,5 C12,3.896 11.104,3 10,3 Z" id="Shape" fill="#000099"></path>
+    </g>
+</svg>

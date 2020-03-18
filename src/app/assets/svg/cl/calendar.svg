@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Ui/calendar" transform="translate(3.000000, 0.000000)"></g>
+        <path d="M12,4 L12,7 C12,8.1045695 12.8954305,9 14,9 C15.0543618,9 15.9181651,8.18412221 15.9945143,7.14926234 L16,7 L16,4 C17.0543618,4 17.9181651,4.81587779 17.9945143,5.85073766 L18,6 L18,18 L2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L4,7 C4,8.1045695 4.8954305,9 6,9 C7.0543618,9 7.91816512,8.18412221 7.99451426,7.14926234 L8,7 L8,4 L12,4 Z M16,12 L4,12 L4,16 L16,16 L16,12 Z M14,2 C14.5522847,2 15,2.44771525 15,3 L15,7 C15,7.55228475 14.5522847,8 14,8 C13.4477153,8 13,7.55228475 13,7 L13,3 C13,2.44771525 13.4477153,2 14,2 Z M6,2 C6.55228475,2 7,2.44771525 7,3 L7,7 C7,7.55228475 6.55228475,8 6,8 C5.44771525,8 5,7.55228475 5,7 L5,3 C5,2.44771525 5.44771525,2 6,2 Z" id="Shape" fill="#000099"></path>
+    </g>
+</svg>

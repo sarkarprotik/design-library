@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="clock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,2 C14.4182667,2 18,5.58173333 18,10 C18,14.4182667 14.4182667,18 10,18 C5.58173333,18 2,14.4182667 2,10 C2,5.58173333 5.58173333,2 10,2 Z M11,3.97866667 L9,3.97866667 L9,11.0081177 L15.6666667,11.0081177 L15.6666667,9.00811768 L11,9.00811768 L11,3.97866667 Z" id="Shape" fill="#000099"></path>
+    </g>
+</svg>

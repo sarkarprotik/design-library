@@ -1,0 +1,132 @@
+{
+  "sasForm": [
+    {
+      "type": "corporate",
+      "heading": "{i18n corporate.cnf.signup.title}",
+      "action": "",
+      "method": "post",
+      "submitLabel": "{i18n dataExcerpts.results.contactUs.send}",
+      "messages": {
+        "success": "{i18n corporate.cnf.signup.success.infotext} <a href=\"/corporate-program/\" target=\"_blank\">{i18n corporate.cnf.signup.success.infotext.link}</a>",
+        "failure": "{i18n aem.forms.generic-failed-message}"
+      },
+      "namePrefix": "corporate-",
+      "fieldSets": [
+        {
+          "heading": "{i18n corporate.cnf.companydetails}",
+          "fields": [
+            {
+              "name": "organisationname",
+              "label": "{i18n corporate.cnf.signup.companyname.acc}",
+              "mandatory": true,
+              "class": "long first",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.companyname.invalid}"
+            },
+            {
+              "name": "organisationnumber",
+              "label": "{i18n corporate.cnf.signup.orgnumber.acc}",
+              "mandatory": true,
+              "class": "short",
+              "dataValidation": "^\\d{7,12}$",
+              "errorMessage": "{i18n corporate.cnf.signup.vat.invalid}"
+            },
+            {
+              "name": "address",
+              "label": "{i18n corporate.cnf.signup.address.acc}",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.address.invalid}"
+            },
+            {
+              "name": "zip",
+              "label": "{i18n corporate.cnf.signup.postalcode.acc}",
+              "mandatory": true,
+              "class": "short first",
+              "dataValidation": "^[\\d\\s]{2,12}$",
+              "errorMessage": "{i18n corporate.cnf.signup.postal.invalid}"
+            },
+            {
+              "name": "city",
+              "label": "{i18n corporate.cnf.signup.city.acc}",
+              "mandatory": true,
+              "class": "long",
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.cityname.invalid}"
+            }
+          ]
+        },
+        {
+          "heading": "{i18n corporate.cnf.signup.contact.primary}",
+          "fields": [
+            {
+              "name": "firstname",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.firstname}",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.firstname.invalid}"
+            },
+            {
+              "name": "lastname",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.lastname}",
+              "mandatory": true,
+              "dataValidation": "^\\S{2,}",
+              "errorMessage": "{i18n corporate.cnf.signup.lastname.invalid}"
+            },
+            {
+              "name": "email",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.email}",
+              "mandatory": true,
+              "type": "email",
+              "class": "first",
+              "dataValidation": "[^@]+@[^\\.]+\\..+",
+              "errorMessage": "{i18n corporate.cnf.signup.email.invalid}"
+            },
+            {
+              "name": "tel",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.phone}",
+              "mandatory": true,
+              "type": "phone",
+              "dataValidation": "^[\\d\\s+-]{8,16}$",
+              "errorMessage": "{i18n corporate.cnf.signup.phone.invalid}"
+            }
+          ]
+        },
+        {
+          "heading": "{i18n corporate.cnf.signup.contact.secondary}",
+          "fields": [
+            {
+              "name": "firstname-secondary",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.firstname}",
+              "errorMessage": "{i18n corporate.cnf.signup.firstname.invalid}"
+            },
+            {
+              "name": "lastname-secondary",
+              "label": "{i18n corporate.cnf.signup.authorized.contact.lastname}",
+              "errorMessage": "{i18n corporate.cnf.signup.lastname.invalid}"
+            },
+            {
+              "name": "email-secondary",
+              "label": "Email Address",
+              "type": "{i18n corporate.cnf.signup.authorized.contact.email}",
+              "class": "first"
+            }
+          ]
+        },
+        {
+          "checkRadio": true,
+          "fields": [
+            {
+              "name": "approve",
+              "value": "Yes",
+              "mandatory": true,
+              "class": "long first",
+              "label": "{i18n corporate.cnf.signup.checkbox.info1} <a href=\"https://www.flysas.com/{i18n marketCode}/legal-info/corporate-products/sas-for-business/\" target=\"_blank\">{i18n signup.termsAndConditions.linkText}</a>.<br>{i18n corporate.cnf.signup.checkbox.info2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

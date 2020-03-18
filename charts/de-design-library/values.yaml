@@ -1,0 +1,51 @@
+# Default values for de-design-library.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: #{REPLICA_COUNT}#
+scope: set_by_release_pipeline
+
+image:
+  repository: set_by_release_pipeline
+  tag: set_by_release_pipeline
+
+service:
+  port: 80
+
+#livenessProbe:
+#  httpGet:
+#    path: /readiness
+#    port: http
+
+readinessProbe:
+  httpGet:
+    path: /readiness
+    port: http
+  initialDelaySeconds: 3
+  periodSeconds: 3
+
+ingress:
+  enabled: true
+  hosts:
+    - "#{INGRESS_HOST_FLYSAS_COM}#"
+    - "#{INGRESS_HOST_SAS_DK}#"
+    - "#{INGRESS_HOST_SAS_FI}#"
+    - "#{INGRESS_HOST_SAS_NO}#"
+    - "#{INGRESS_HOST_SAS_SE}#"
+  path: /v2/de-design-library
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+
+
+# Variables that can be injected/overridden by release pipeline (used in ConfigMap manifest):
+env:
+  NODE_ENV: prod
+
+# Variables (secrets) that can be injected/overridden by release pipeline (used in Secret manifest):
+secenv:

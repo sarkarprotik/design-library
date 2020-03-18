@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>close-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="close-circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,4 C16.418278,4 20,7.581722 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z M14.7320809,7.85370551 L11.9997055,10.5857055 L9.26791907,7.85370551 L7.85370551,9.26791907 L10.5857055,11.9997055 L7.88692261,14.6988638 L9.30113617,16.1130774 L11.9997055,13.4137055 L14.6988638,16.1130774 L16.1130774,14.6988638 L13.4137055,11.9997055 L16.1462945,9.26791907 L14.7320809,7.85370551 Z" id="Shape" fill="#BFBCB5"></path>
+    </g>
+</svg>
